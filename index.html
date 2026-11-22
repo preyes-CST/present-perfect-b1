@@ -1,0 +1,4035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Present Perfect Mastery: 7th Grade Foundations to B1 Exam Prep</title>
+  <style>
+    /* =========================================================================
+       1. DESIGN TOKENS & RESET (100% SELF-CONTAINED, ZERO EXTERNAL DEPENDENCIES)
+       ========================================================================= */
+    :root {
+      --bg-page: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-muted: #f1f5f9;
+      --text-main: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e1;
+
+      /* Pedagogical 3-Color Scaffolding Tokens */
+      --blue-bg: #dbeafe;
+      --blue-bg-soft: #eff6ff;
+      --blue-text: #1d4ed8;
+      --blue-border: #2563eb;
+
+      --green-bg: #dcfce7;
+      --green-bg-soft: #f0fdf4;
+      --green-text: #15803d;
+      --green-border: #16a34a;
+
+      --red-bg: #fee2e2;
+      --red-bg-soft: #fef2f2;
+      --red-text: #b91c1c;
+      --red-border: #dc2626;
+
+      --amber-bg: #fef3c7;
+      --amber-text: #92400e;
+      --amber-border: #f59e0b;
+
+      --purple-bg: #f3e8ff;
+      --purple-text: #6b21a8;
+      --purple-border: #9333ea;
+
+      --indigo-bg: #e0e7ff;
+      --indigo-text: #3730a3;
+      --indigo-border: #4f46e5;
+
+      --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+      --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.09);
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.35rem;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.5;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1, h2, h3, h4, p, ul {
+      margin: 0;
+    }
+
+    button, input, select {
+      font-family: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* =========================================================================
+       2. LAYOUT CONTAINERS & HEADER NAVIGATION
+       ========================================================================= */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: var(--shadow-xs);
+      padding: 0.75rem 0 0.5rem;
+    }
+
+    .header-top {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      padding-bottom: 0.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      .header-top {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-logo {
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 0.85rem;
+      background: linear-gradient(135deg, #1d4ed8, #15803d);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .brand-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+
+    @media (min-width: 640px) {
+      .brand-title {
+        font-size: 1.25rem;
+      }
+    }
+
+    .brand-subtitle {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-top: 0.15rem;
+    }
+
+    .legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .legend-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 0.6rem;
+      border: 1px solid;
+    }
+
+    .legend-dot {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 999px;
+      display: inline-block;
+    }
+
+    .pill-blue { background: var(--blue-bg); color: var(--blue-text); border-color: #93c5fd; }
+    .pill-green { background: var(--green-bg); color: var(--green-text); border-color: #86efac; }
+    .pill-red { background: var(--red-bg); color: var(--red-text); border-color: #fca5a5; }
+
+    /* Progress Bar */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 0.35rem 0;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 0.55rem;
+      background: var(--bg-muted);
+      border-radius: 999px;
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 4%;
+      background: linear-gradient(90deg, #1d4ed8, #0d9488, #15803d);
+      transition: width 0.4s ease;
+    }
+
+    .progress-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 0.4rem;
+      overflow-x: auto;
+      padding: 0.35rem 0;
+      scrollbar-width: none;
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-tab {
+      flex: 1 0 auto;
+      min-width: 145px;
+      padding: 0.6rem 0.85rem;
+      border-radius: 0.75rem;
+      border: 1px solid transparent;
+      background: var(--bg-muted);
+      color: #334155;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: all 0.18s ease;
+    }
+
+    .nav-tab:hover {
+      background: #e2e8f0;
+    }
+
+    .nav-tab.active {
+      background: #0f172a;
+      color: #ffffff;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .tab-check {
+      background: #16a34a;
+      color: #ffffff;
+      font-size: 0.65rem;
+      padding: 0.08rem 0.38rem;
+      border-radius: 999px;
+    }
+
+    /* =========================================================================
+       3. CARDS, TYPOGRAPHY, BADGES & INLINE COLOR TOKENS
+       ========================================================================= */
+    main.container {
+      flex: 1;
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+    }
+
+    .module-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.35rem;
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (min-width: 640px) {
+      .card {
+        padding: 1.5rem;
+      }
+    }
+
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #172554 100%);
+      color: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      border: 1px solid #334155;
+      box-shadow: var(--shadow-md);
+    }
+
+    @media (min-width: 640px) {
+      .hero-banner {
+        padding: 2rem;
+      }
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero-badge {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid;
+    }
+
+    .hero-badge-blue {
+      background: rgba(59, 130, 246, 0.2);
+      border-color: rgba(147, 197, 253, 0.45);
+      color: #bfdbfe;
+    }
+
+    .hero-badge-green {
+      background: rgba(34, 197, 94, 0.2);
+      border-color: rgba(134, 239, 172, 0.45);
+      color: #bbf7d0;
+    }
+
+    .hero-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.65rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+
+    .hero-text {
+      font-size: 0.92rem;
+      color: #e2e8f0;
+      max-width: 860px;
+      line-height: 1.6;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .eyebrow-blue { background: var(--blue-bg); color: var(--blue-text); }
+    .eyebrow-green { background: var(--green-bg); color: var(--green-text); }
+    .eyebrow-red { background: var(--red-bg); color: var(--red-text); }
+    .eyebrow-purple { background: var(--purple-bg); color: var(--purple-text); }
+    .eyebrow-indigo { background: var(--indigo-bg); color: var(--indigo-text); }
+    .eyebrow-amber { background: var(--amber-bg); color: var(--amber-text); }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    @media (min-width: 640px) {
+      .section-title {
+        font-size: 1.45rem;
+      }
+    }
+
+    .section-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-top: 0.3rem;
+    }
+
+    /* Inline Scaffolding Tokens */
+    .token-blue {
+      background: var(--blue-bg);
+      color: var(--blue-text);
+      border: 1.5px solid var(--blue-border);
+      font-weight: 700;
+      padding: 0.05rem 0.42rem;
+      border-radius: 0.4rem;
+      display: inline-block;
+    }
+
+    .token-green {
+      background: var(--green-bg);
+      color: var(--green-text);
+      border: 1.5px solid var(--green-border);
+      font-weight: 700;
+      padding: 0.05rem 0.42rem;
+      border-radius: 0.4rem;
+      display: inline-block;
+    }
+
+    .token-red {
+      background: var(--red-bg);
+      color: var(--red-text);
+      border: 1.5px solid var(--red-border);
+      font-weight: 700;
+      padding: 0.05rem 0.42rem;
+      border-radius: 0.4rem;
+      display: inline-block;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.05rem;
+      border-radius: 0.75rem;
+      border: 1px solid transparent;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.16s ease;
+    }
+
+    .btn-sm {
+      padding: 0.42rem 0.78rem;
+      font-size: 0.75rem;
+      border-radius: 0.62rem;
+    }
+
+    .btn-lg {
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      border-radius: 0.9rem;
+    }
+
+    .btn-primary {
+      background: #1d4ed8;
+      color: #ffffff;
+      box-shadow: var(--shadow-xs);
+    }
+    .btn-primary:hover { background: #1e40af; }
+
+    .btn-success {
+      background: #15803d;
+      color: #ffffff;
+      box-shadow: var(--shadow-xs);
+    }
+    .btn-success:hover { background: #166534; }
+
+    .btn-indigo {
+      background: #4338ca;
+      color: #ffffff;
+      box-shadow: var(--shadow-xs);
+    }
+    .btn-indigo:hover { background: #3730a3; }
+
+    .btn-dark {
+      background: #0f172a;
+      color: #ffffff;
+    }
+    .btn-dark:hover { background: #1e293b; }
+
+    .btn-secondary {
+      background: var(--bg-muted);
+      color: #1e293b;
+      border-color: var(--border-medium);
+    }
+    .btn-secondary:hover { background: #e2e8f0; }
+
+    .btn-amber {
+      background: var(--amber-bg);
+      color: var(--amber-text);
+      border-color: #fcd34d;
+    }
+    .btn-amber:hover { background: #fde68a; }
+
+    /* Responsive Grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 768px) {
+      .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 768px) {
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.9rem;
+    }
+    @media (min-width: 640px) {
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .flex-between {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    /* =========================================================================
+       4. TAB 0: INTRODUCTORY GUIDE CARDS & TABLES
+       ========================================================================= */
+    .color-guide-box {
+      border-radius: var(--radius-lg);
+      padding: 1.15rem;
+      border: 2px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .guide-blue { background: var(--blue-bg-soft); border-color: var(--blue-border); }
+    .guide-green { background: var(--green-bg-soft); border-color: var(--green-border); }
+    .guide-red { background: var(--red-bg-soft); border-color: var(--red-border); }
+
+    .guide-inner-list {
+      background: #ffffff;
+      border-radius: 0.65rem;
+      padding: 0.65rem 0.8rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid var(--border-light);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .dual-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .dual-box-inner {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 0.65rem;
+      padding: 0.65rem 0.75rem;
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .roadmap-card {
+      text-align: left;
+      background: var(--bg-page);
+      border: 2px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+      transition: all 0.18s ease;
+    }
+
+    .roadmap-card:hover {
+      border-color: var(--blue-border);
+      background: var(--blue-bg-soft);
+      transform: translateY(-2px);
+    }
+
+    .step-circle {
+      width: 1.9rem;
+      height: 1.9rem;
+      border-radius: 0.55rem;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* =========================================================================
+       5. TAB 1: UNLOCKABLE 3D VERB CARDS (ACTIVE RECALL -> US/UK + AUDIO)
+       ========================================================================= */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+    }
+    @media (min-width: 640px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .cards-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .flip-card {
+      perspective: 1200px;
+      min-height: 455px;
+      position: relative;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      min-height: 455px;
+      transition: transform 0.62s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      min-height: 455px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      border: 2px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .flip-card-front:hover {
+      border-color: var(--blue-border);
+    }
+
+    .flip-card.unlocked .flip-card-front {
+      border-color: var(--green-border);
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      background: #f8fafc;
+      border-color: var(--blue-border);
+      overflow-y: auto;
+    }
+
+    .flip-card.unlocked .flip-card-back {
+      border-color: var(--green-border);
+      background: #ffffff;
+    }
+
+    .participle-input {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      border-radius: 0.7rem;
+      border: 2px solid var(--green-border);
+      background: var(--green-bg-soft);
+      color: var(--green-text);
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-align: center;
+      outline: none;
+    }
+
+    .participle-input:focus {
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+    }
+
+    .variant-panel {
+      border-radius: 0.75rem;
+      padding: 0.65rem 0.75rem;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .variant-us {
+      background: #eff6ff;
+      border-color: #93c5fd;
+    }
+
+    .variant-uk {
+      background: #eef2ff;
+      border-color: #a5b4fc;
+    }
+
+    .trap-panel {
+      background: var(--red-bg-soft);
+      border: 1px solid #fca5a5;
+      border-radius: 0.75rem;
+      padding: 0.55rem 0.75rem;
+      font-size: 0.74rem;
+      color: var(--red-text);
+      line-height: 1.4;
+    }
+
+    /* =========================================================================
+       6. TAB 2: LEGO SENTENCE BUILDER & ERROR SPOTTER
+       ========================================================================= */
+    .lego-controls {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      background: var(--bg-page);
+      padding: 1rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-light);
+    }
+
+    @media (min-width: 640px) {
+      .lego-controls { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .lego-controls { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .select-field {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border-radius: 0.7rem;
+      border: 2px solid var(--border-medium);
+      background: #ffffff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .select-blue {
+      background: var(--blue-bg);
+      border-color: var(--blue-border);
+      color: var(--blue-text);
+      font-weight: 800;
+    }
+
+    .select-green {
+      background: var(--green-bg);
+      border-color: var(--green-border);
+      color: var(--green-text);
+      font-weight: 800;
+    }
+
+    .lego-stage {
+      border-radius: var(--radius-lg);
+      padding: 1.15rem;
+      border: 2px solid var(--green-border);
+      background: var(--green-bg-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .lego-stage.invalid {
+      border-color: var(--red-border);
+      background: var(--red-bg-soft);
+    }
+
+    .lego-blocks-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .lego-piece {
+      padding: 0.45rem 0.85rem;
+      border-radius: 0.7rem;
+      font-weight: 800;
+      font-size: 0.84rem;
+      box-shadow: 0 3px 0 rgba(15, 23, 42, 0.14);
+    }
+
+    .spotter-row {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .spotter-row.solved {
+      background: var(--green-bg-soft);
+      border-color: #86efac;
+    }
+
+    .word-btn {
+      padding: 0.35rem 0.7rem;
+      border-radius: 0.6rem;
+      border: 1px solid var(--border-medium);
+      background: #ffffff;
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .word-btn:hover {
+      background: var(--amber-bg);
+      border-color: var(--amber-border);
+    }
+
+    .word-btn.wrong-flash {
+      background: var(--red-bg);
+      border-color: var(--red-border);
+      color: var(--red-text);
+    }
+
+    /* =========================================================================
+       7. TAB 3: GUIDED PRACTICE, LISTENING TRACKS & PEER GRID
+       ========================================================================= */
+    .gap-input-blue {
+      width: 8.5rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 0.65rem;
+      border: 2px solid var(--blue-border);
+      background: var(--blue-bg);
+      color: var(--blue-text);
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .gap-input-blue:focus { background: #ffffff; outline: none; }
+
+    .gap-input-green {
+      width: 10.5rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 0.65rem;
+      border: 2px solid var(--green-border);
+      background: var(--green-bg);
+      color: var(--green-text);
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .gap-input-green:focus { background: #ffffff; outline: none; }
+
+    .audio-track-card {
+      background: var(--bg-page);
+      border: 1.5px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .speed-group {
+      display: inline-flex;
+      background: #ffffff;
+      border: 1px solid var(--border-medium);
+      border-radius: 0.65rem;
+      padding: 0.18rem;
+    }
+
+    .speed-btn {
+      padding: 0.3rem 0.65rem;
+      border-radius: 0.5rem;
+      border: none;
+      background: transparent;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--text-secondary);
+    }
+
+    .speed-btn.active {
+      background: #0f172a;
+      color: #ffffff;
+    }
+
+    .transcript-drawer {
+      background: #ffffff;
+      border: 1px dashed var(--border-medium);
+      border-radius: 0.75rem;
+      padding: 0.85rem;
+      font-size: 0.84rem;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    .mc-option-btn {
+      width: 100%;
+      text-align: left;
+      padding: 0.52rem 0.75rem;
+      border-radius: 0.65rem;
+      border: 1px solid var(--border-medium);
+      background: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: all 0.15s ease;
+    }
+
+    .mc-option-btn:hover {
+      background: var(--blue-bg-soft);
+      border-color: var(--blue-border);
+    }
+
+    .mc-option-btn.selected {
+      background: var(--blue-bg);
+      border-color: var(--blue-border);
+      color: var(--blue-text);
+      font-weight: 800;
+    }
+
+    .mc-option-btn.correct {
+      background: var(--green-bg);
+      border-color: var(--green-border);
+      color: var(--green-text);
+      font-weight: 800;
+    }
+
+    .mc-option-btn.incorrect {
+      background: var(--red-bg);
+      border-color: var(--red-border);
+      color: var(--red-text);
+      font-weight: 800;
+    }
+
+    .peer-tile {
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--border-light);
+      background: var(--bg-page);
+      padding: 1rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+      transition: all 0.16s ease;
+    }
+
+    .peer-tile:hover { border-color: var(--blue-border); }
+    .peer-tile.yes { background: var(--green-bg-soft); border-color: var(--green-border); }
+    .peer-tile.no { background: var(--amber-bg); border-color: var(--amber-border); }
+
+    /* =========================================================================
+       8. TAB 4: B1 EXAM QUIZ (PET, IELTS & FCE)
+       ========================================================================= */
+    .exam-passage {
+      background: var(--bg-page);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.15rem;
+      font-size: 0.96rem;
+      line-height: 1.85;
+      color: #1e293b;
+    }
+
+    .exam-inline-input {
+      width: 7.5rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.55rem;
+      border: 2px solid var(--blue-border);
+      background: #ffffff;
+      color: var(--blue-text);
+      font-weight: 800;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .exam-ielts-input {
+      width: 12.5rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.6rem;
+      border: 2px solid var(--purple-border);
+      background: #ffffff;
+      color: var(--purple-text);
+      font-weight: 800;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .exam-fce-input {
+      width: 15.5rem;
+      padding: 0.4rem 0.7rem;
+      border-radius: 0.6rem;
+      border: 2px solid var(--amber-border);
+      background: #fffbeb;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .exam-submit-bar {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 1.35rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .diagnostic-panel {
+      background: #ffffff;
+      border: 2px solid var(--green-border);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* Audio Playing Pulse & Toast */
+    @keyframes pulseAudio {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.04); opacity: 0.75; }
+    }
+    .speaking-active {
+      animation: pulseAudio 1s infinite ease-in-out;
+    }
+
+    .toast-banner {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 60;
+      background: #0f172a;
+      color: #ffffff;
+      border: 1px solid #334155;
+      border-radius: 0.85rem;
+      padding: 0.7rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 340px;
+    }
+
+    .site-footer {
+      background: #ffffff;
+      border-top: 1px solid var(--border-light);
+      padding: 1rem 0;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: auto;
+    }
+
+    .student-id-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 0.75rem;
+    }
+
+    .student-id-input {
+      padding: 0.55rem 0.8rem;
+      border-radius: 0.65rem;
+      border: 1.5px solid #475569;
+      background: #1e293b;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      min-width: 210px;
+    }
+
+    .student-id-input::placeholder {
+      color: #94a3b8;
+    }
+
+    .student-id-input:focus {
+      outline: none;
+      border-color: #60a5fa;
+      background: #0f172a;
+    }
+
+    .export-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 0.95rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .classroom-steps-banner {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 0.75rem;
+      padding: 0.75rem 0.9rem;
+      font-size: 0.78rem;
+      color: #1e3a8a;
+      line-height: 1.5;
+    }
+
+    .report-preview-pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.74rem;
+      line-height: 1.45;
+      padding: 0.85rem;
+      border-radius: 0.7rem;
+      max-height: 190px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    .review-plan-box {
+      background: #fffbeb;
+      border: 2px solid #f59e0b;
+      border-radius: 0.95rem;
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .review-plan-box.all-mastered {
+      background: #f0fdf4;
+      border-color: #16a34a;
+    }
+
+    .review-topic-card {
+      background: #ffffff;
+      border: 1px solid #fcd34d;
+      border-left: 4px solid #dc2626;
+      border-radius: 0.75rem;
+      padding: 0.8rem 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    @media print {
+      .site-header, .exam-submit-bar, .no-print, .toast-banner, .site-footer {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+      }
+      .diagnostic-panel {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================= -->
+  <!-- TOP STICKY HEADER & NAVIGATION TABS                                     -->
+  <!-- ======================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="brand-group">
+          <div class="brand-logo" aria-hidden="true">PP</div>
+          <div>
+            <h1 class="brand-title">
+              Present Perfect Mastery: <span style="color:#1d4ed8;">7th Grade</span> to <span style="color:#15803d;">B1 Exam Prep</span>
+            </h1>
+            <p class="brand-subtitle">
+              US 🇺🇸 &amp; UK 🇬🇧 Dual Standard &bull; Visual, Audio &amp; Written Sequence (No Speaking Activities)
+            </p>
+          </div>
+        </div>
+
+        <!-- 3-Color Scaffolding System Legend -->
+        <div class="legend-pills" aria-label="Color coding legend">
+          <span class="legend-pill pill-blue">
+            <span class="legend-dot" style="background:#1d4ed8;"></span>
+            Blue = Auxiliary (have/has)
+          </span>
+          <span class="legend-pill pill-green">
+            <span class="legend-dot" style="background:#15803d;"></span>
+            Green = Past Participle
+          </span>
+          <span class="legend-pill pill-red">
+            <span class="legend-dot" style="background:#b91c1c;"></span>
+            Red = Simple Past Trap
+          </span>
+        </div>
+      </div>
+
+      <!-- Global Progress Bar -->
+      <div class="progress-row">
+        <div class="progress-track" role="progressbar" aria-label="Course completion progress">
+          <div id="global-progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="global-progress-text" class="progress-label">Progress: 0 / 38 Tasks</span>
+      </div>
+
+      <!-- 5 Navigation Tabs -->
+      <nav class="nav-tabs" aria-label="Sequence modules">
+        <button onclick="switchTab(0)" id="tab-btn-0" class="nav-tab active">
+          <span>0. How It Works</span>
+        </button>
+        <button onclick="switchTab(1)" id="tab-btn-1" class="nav-tab">
+          <span>1. Verb Cards (15)</span>
+          <span id="tab-badge-1" class="tab-check hidden">✓</span>
+        </button>
+        <button onclick="switchTab(2)" id="tab-btn-2" class="nav-tab">
+          <span>2. Formula &amp; Error Lab</span>
+          <span id="tab-badge-2" class="tab-check hidden">✓</span>
+        </button>
+        <button onclick="switchTab(3)" id="tab-btn-3" class="nav-tab">
+          <span>3. Guided Practice &amp; Listening</span>
+          <span id="tab-badge-3" class="tab-check hidden">✓</span>
+        </button>
+        <button onclick="switchTab(4)" id="tab-btn-4" class="nav-tab">
+          <span>4. B1 Exam Quiz (PET &middot; IELTS &middot; FCE)</span>
+          <span id="tab-badge-4" class="tab-check hidden">✓</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Inline Notification Banner -->
+  <div id="toast-banner" class="toast-banner hidden" role="status">
+    <span id="toast-icon">ℹ️</span>
+    <span id="toast-text">Notification</span>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- MAIN CONTENT AREA                                                       -->
+  <!-- ======================================================================= -->
+  <main class="container">
+
+    <!-- ===================================================================== -->
+    <!-- TAB 0 (DEFAULT ACTIVE): "0. HOW IT WORKS" (INTRODUCTORY SESSION)      -->
+    <!-- ===================================================================== -->
+    <section id="module-0" class="module-section">
+
+      <!-- Welcome Hero Slide -->
+      <div class="hero-banner">
+        <div class="hero-badges">
+          <span class="hero-badge hero-badge-blue">📘 Introductory Session</span>
+          <span class="hero-badge hero-badge-green">🎧 Visual, Audio &amp; Written Only (Zero Speaking Pressure)</span>
+        </div>
+        <h2 class="hero-title">How to Work on This Academic Sequence</h2>
+        <p class="hero-text">
+          Welcome! This self-paced learning sequence is designed for <strong>7th-grade students</strong> to close foundational gaps in the <strong>Present Perfect tense</strong> (regular and irregular past participles) and build step-by-step readiness for <strong>international B1/B1+ exams (Cambridge PET, IELTS, and FCE)</strong>. Every module contrasts <strong>American English (US 🇺🇸)</strong> and <strong>British English (UK 🇬🇧)</strong> and requires <strong>zero oral speaking activities</strong>.
+        </p>
+      </div>
+
+      <!-- Visual Legend of the 3-Color Code -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-blue">Step 1 &bull; Visual Grammar Anchoring</span>
+        <h3 class="section-title">The 3-Color Visual Code</h3>
+        <p class="section-desc">
+          Throughout all 4 modules, three consistent colors help you build accurate sentences without memorizing long rule lists:
+        </p>
+
+        <div class="grid-3" style="margin-top:1rem;">
+          <!-- Blue -->
+          <div class="color-guide-box guide-blue">
+            <div>
+              <span class="section-eyebrow" style="background:#1d4ed8;color:#ffffff;">1. Blue = Auxiliary Verb</span>
+              <h4 style="font-size:1.05rem;font-weight:800;color:#1d4ed8;margin-top:0.2rem;">have / has / haven't / hasn't</h4>
+              <p style="font-size:0.82rem;color:#334155;margin-top:0.35rem;">Matches the subject of your sentence:</p>
+              <ul class="guide-inner-list" style="margin-top:0.5rem;">
+                <li>&bull; <strong>I / You / We / They</strong> &rarr; <span style="color:#1d4ed8;">have / haven't</span></li>
+                <li>&bull; <strong>He / She / It</strong> &rarr; <span style="color:#1d4ed8;">has / hasn't</span></li>
+              </ul>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem 0.7rem;border-radius:0.6rem;border:1px solid #bfdbfe;font-size:0.8rem;font-weight:700;">
+              Example: Maya <span class="token-blue">has</span> visited London.
+            </div>
+          </div>
+
+          <!-- Green -->
+          <div class="color-guide-box guide-green">
+            <div>
+              <span class="section-eyebrow" style="background:#15803d;color:#ffffff;">2. Green = Past Participle</span>
+              <h4 style="font-size:1.05rem;font-weight:800;color:#15803d;margin-top:0.2rem;">Regular (-ed) &amp; Irregular (3rd Form)</h4>
+              <p style="font-size:0.82rem;color:#334155;margin-top:0.35rem;">Always comes after the blue auxiliary:</p>
+              <ul class="guide-inner-list" style="margin-top:0.5rem;">
+                <li>&bull; <strong>Regular:</strong> base + <strong>-ed</strong> (<em>played, watched, visited</em>)</li>
+                <li>&bull; <strong>Irregular:</strong> 3rd column (<em>eaten, seen, gone, broken</em>)</li>
+              </ul>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem 0.7rem;border-radius:0.6rem;border:1px solid #bbf7d0;font-size:0.8rem;font-weight:700;">
+              Example: We <span class="token-blue">have</span> <span class="token-green">eaten</span> sushi.
+            </div>
+          </div>
+
+          <!-- Red -->
+          <div class="color-guide-box guide-red">
+            <div>
+              <span class="section-eyebrow" style="background:#b91c1c;color:#ffffff;">3. Red = Simple Past Trap</span>
+              <h4 style="font-size:1.05rem;font-weight:800;color:#b91c1c;margin-top:0.2rem;">went, ate, saw, broke, did, wrote</h4>
+              <p style="font-size:0.82rem;color:#334155;margin-top:0.35rem;"><strong>NEVER</strong> put a 2nd-column Simple Past verb after <code>have</code> or <code>has</code>:</p>
+              <ul class="guide-inner-list" style="margin-top:0.5rem;">
+                <li>❌ Wrong: He has <span class="token-red">went</span> home.</li>
+                <li>✅ Right: He <span class="token-blue">has</span> <span class="token-green">gone</span> home.</li>
+              </ul>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem 0.7rem;border-radius:0.6rem;border:1px solid #fecaca;font-size:0.8rem;font-weight:700;color:#b91c1c;">
+              ⚠️ Watch for Red Traps in every module!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dual Standard Guide: US vs UK English -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-indigo">Step 2 &bull; International English Standards</span>
+            <h3 class="section-title">Dual Standard Guide: American (US 🇺🇸) vs. British (UK 🇬🇧) English</h3>
+          </div>
+          <span class="legend-pill pill-green">✓ Both US &amp; UK forms earn 100% credit across all tasks</span>
+        </div>
+
+        <div class="grid-4" style="margin-top:1rem;">
+          <!-- Spelling -->
+          <div class="dual-box">
+            <span class="section-eyebrow eyebrow-blue" style="align-self:flex-start;">1. Spelling (-L vs -LL)</span>
+            <h4 style="font-size:0.92rem;font-weight:800;">Single vs. Double "L"</h4>
+            <div class="dual-box-inner">
+              <p>🇺🇸 <strong>US:</strong> <span style="color:#15803d;font-weight:800;">traveled</span></p>
+              <p style="margin-top:0.3rem;">🇬🇧 <strong>UK:</strong> <span style="color:#3730a3;font-weight:800;">travelled</span></p>
+              <p style="margin-top:0.4rem;color:#64748b;font-size:0.73rem;">US keeps a single "l" when the final syllable is unstressed; UK doubles "ll".</p>
+            </div>
+          </div>
+
+          <!-- Irregular Participles -->
+          <div class="dual-box">
+            <span class="section-eyebrow eyebrow-green" style="align-self:flex-start;">2. Irregular Participles</span>
+            <h4 style="font-size:0.92rem;font-weight:800;">get &amp; learn</h4>
+            <div class="dual-box-inner">
+              <p>🇺🇸 <strong>US:</strong> <span style="color:#15803d;font-weight:800;">gotten</span> / <span style="color:#15803d;font-weight:800;">learned</span></p>
+              <p style="margin-top:0.3rem;">🇬🇧 <strong>UK:</strong> <span style="color:#3730a3;font-weight:800;">got</span> / <span style="color:#3730a3;font-weight:800;">learnt</span></p>
+              <p style="margin-top:0.4rem;color:#64748b;font-size:0.73rem;">Note: <em>learned</em> is also acceptable in UK, while <em>gotten</em> is distinctly US.</p>
+            </div>
+          </div>
+
+          <!-- Vocabulary -->
+          <div class="dual-box">
+            <span class="section-eyebrow eyebrow-amber" style="align-self:flex-start;">3. Everyday Vocabulary</span>
+            <h4 style="font-size:0.92rem;font-weight:800;">US 🇺🇸 &harr; UK 🇬🇧 Terms</h4>
+            <div class="dual-box-inner">
+              <p>&bull; <strong>soccer</strong> (US) / <strong>football</strong> (UK)</p>
+              <p>&bull; <strong>movie</strong> (US) / <strong>film</strong> (UK)</p>
+              <p>&bull; <strong>cell phone</strong> (US) / <strong>mobile phone</strong> (UK)</p>
+              <p>&bull; <strong>French fries</strong> (US) / <strong>chips</strong> (UK)</p>
+              <p>&bull; <strong>vacation</strong> (US) / <strong>holiday</strong> (UK)</p>
+            </div>
+          </div>
+
+          <!-- Grammar Rules -->
+          <div class="dual-box">
+            <span class="section-eyebrow eyebrow-purple" style="align-self:flex-start;">4. Grammar Contrast</span>
+            <h4 style="font-size:0.92rem;font-weight:800;">just / already / yet</h4>
+            <div class="dual-box-inner">
+              <p>🇬🇧 <strong>UK &amp; B1 Exams:</strong> Strictly use Present Perfect (<em>"She <span style="color:#1d4ed8;font-weight:800;">has</span> just <span style="color:#15803d;font-weight:800;">eaten</span>."</em>).</p>
+              <p style="margin-top:0.35rem;">🇺🇸 <strong>Casual US:</strong> Speakers sometimes use Past Simple (<em>"She just ate"</em>), though Present Perfect is standard in formal writing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Step Lesson Roadmap (60-Minute Class Structure) -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-green">Step 3 &bull; 60-Minute Class Structure</span>
+        <h3 class="section-title">4-Step Lesson Roadmap</h3>
+        <p class="section-desc">Click any module below to jump straight in, or click the start button to begin Module 1:</p>
+
+        <div class="grid-4" style="margin-top:1rem;">
+          <button onclick="switchTab(1)" class="roadmap-card">
+            <div>
+              <div class="flex-between">
+                <span class="step-circle" style="background:#1d4ed8;">1</span>
+                <span class="legend-pill pill-blue">15 min</span>
+              </div>
+              <h4 style="font-weight:800;font-size:0.98rem;margin-top:0.75rem;">Verb Cards (15 Verbs)</h4>
+              <p style="font-size:0.8rem;color:#475569;margin-top:0.3rem;">
+                Flip 3D cards, type the Past Participle to unlock each card, and listen to US 🇺🇸 &amp; UK 🇬🇧 audio examples.
+              </p>
+            </div>
+            <span style="font-size:0.76rem;font-weight:800;color:#1d4ed8;border-top:1px solid #e2e8f0;padding-top:0.5rem;">Open Module 1 &rarr;</span>
+          </button>
+
+          <button onclick="switchTab(2)" class="roadmap-card">
+            <div>
+              <div class="flex-between">
+                <span class="step-circle" style="background:#0d9488;">2</span>
+                <span class="legend-pill" style="background:#ccfbf1;color:#115e59;border-color:#5eead4;">15 min</span>
+              </div>
+              <h4 style="font-weight:800;font-size:0.98rem;margin-top:0.75rem;">Formula &amp; Error Lab</h4>
+              <p style="font-size:0.8rem;color:#475569;margin-top:0.3rem;">
+                Explore the SVG timeline, build sentences with the Lego Builder + US/UK audio, and solve the 5-sentence Error Spotter.
+              </p>
+            </div>
+            <span style="font-size:0.76rem;font-weight:800;color:#0f766e;border-top:1px solid #e2e8f0;padding-top:0.5rem;">Open Module 2 &rarr;</span>
+          </button>
+
+          <button onclick="switchTab(3)" class="roadmap-card">
+            <div>
+              <div class="flex-between">
+                <span class="step-circle" style="background:#15803d;">3</span>
+                <span class="legend-pill pill-green">15 min</span>
+              </div>
+              <h4 style="font-weight:800;font-size:0.98rem;margin-top:0.75rem;">Guided Practice &amp; Listening</h4>
+              <p style="font-size:0.8rem;color:#475569;margin-top:0.3rem;">
+                Complete 6 color-coded gap fills, listen to US &amp; UK teen audio stories, and complete your solo Personal Experience Grid.
+              </p>
+            </div>
+            <span style="font-size:0.76rem;font-weight:800;color:#15803d;border-top:1px solid #e2e8f0;padding-top:0.5rem;">Open Module 3 &rarr;</span>
+          </button>
+
+          <button onclick="switchTab(4)" class="roadmap-card">
+            <div>
+              <div class="flex-between">
+                <span class="step-circle" style="background:#4338ca;">4</span>
+                <span class="legend-pill" style="background:#e0e7ff;color:#3730a3;border-color:#a5b4fc;">15 min</span>
+              </div>
+              <h4 style="font-weight:800;font-size:0.98rem;margin-top:0.75rem;">B1 Exam Quiz (PET &middot; IELTS &middot; FCE)</h4>
+              <p style="font-size:0.8rem;color:#475569;margin-top:0.3rem;">
+                Take the 16-item international exam simulation with automatic US/UK grading and a CEFR readiness diagnostic.
+              </p>
+            </div>
+            <span style="font-size:0.76rem;font-weight:800;color:#3730a3;border-top:1px solid #e2e8f0;padding-top:0.5rem;">Open Module 4 &rarr;</span>
+          </button>
+        </div>
+
+        <div class="flex-between" style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border-light);">
+          <p style="font-size:0.86rem;color:var(--text-secondary);font-weight:600;">
+            Ready to start? Begin by unlocking the 15 interactive Past Participle flashcards in Module 1.
+          </p>
+          <button onclick="switchTab(1)" class="btn btn-primary btn-lg">
+            Start Module 1: Verb Cards &rarr;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 1: "1. VERB CARDS" (UNLOCKABLE 3D FLASHCARDS — 15 VERBS)          -->
+    <!-- ===================================================================== -->
+    <section id="module-1" class="module-section hidden">
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-blue">Module 1 &bull; Active Recall &amp; Dual-Accent Audio</span>
+            <h2 class="section-title">Interactive Unlockable 3D Verb Cards (15 Verbs)</h2>
+            <p class="section-desc">
+              1. Click <strong>"Flip to Complete Participle &rarr;"</strong> on any card. &nbsp;
+              2. Type the <strong style="color:#15803d;">Past Participle</strong> (US or UK spelling) to unlock the card. &nbsp;
+              3. Listen to <strong>🇺🇸 US Audio</strong> and <strong>🇬🇧 UK Audio</strong> examples!
+            </p>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.6rem;">
+            <span class="legend-pill pill-green" style="font-size:0.8rem;padding:0.45rem 0.8rem;">
+              Unlocked: <strong id="unlocked-cards-count">0</strong> / 15 Cards
+            </span>
+            <button onclick="toggleTeacherUnlockAll()" id="btn-teacher-unlock" class="btn btn-dark">
+              🔓 Teacher Unlock All
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border-light);" role="group" aria-label="Verb category filters">
+          <button onclick="filterVerbCards('all')" data-cat="all" class="btn btn-primary verb-filter">All (15)</button>
+          <button onclick="filterVerbCards('regular')" data-cat="regular" class="btn btn-secondary verb-filter">Core Regular (5)</button>
+          <button onclick="filterVerbCards('irregular')" data-cat="irregular" class="btn btn-secondary verb-filter">Core Irregular (5)</button>
+          <button onclick="filterVerbCards('dual')" data-cat="dual" class="btn btn-secondary verb-filter">B1 &amp; US/UK Dual (5)</button>
+        </div>
+      </div>
+
+      <!-- 15 Unlockable 3D Cards Container -->
+      <div id="verb-cards-grid" class="cards-grid">
+        <!-- Populated via JavaScript -->
+      </div>
+
+      <div class="flex-between" style="padding-top:0.5rem;">
+        <button onclick="switchTab(0)" class="btn btn-secondary">&larr; 0. How It Works</button>
+        <button onclick="switchTab(2)" class="btn btn-primary">Continue to Module 2: Formula &amp; Error Lab &rarr;</button>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 2: "2. FORMULA & ERROR LAB"                                       -->
+    <!-- ===================================================================== -->
+    <section id="module-2" class="module-section hidden">
+
+      <!-- Part A: SVG Timeline & Formula -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-blue">Module 2A &bull; Visual Timeline &amp; Structure</span>
+        <h2 class="section-title">Unspecified Past Connected to NOW</h2>
+        <p class="section-desc">
+          We use the <strong>Present Perfect</strong> for life experiences and actions up to now when the exact date is unknown or unimportant.
+        </p>
+
+        <div class="grid-2" style="margin-top:1rem;">
+          <!-- SVG Timeline -->
+          <div style="background:var(--bg-page);border:1px solid var(--border-light);border-radius:1rem;padding:1rem;display:flex;flex-direction:column;justify-content:space-between;">
+            <div class="flex-between" style="margin-bottom:0.5rem;">
+              <span style="font-size:0.75rem;font-weight:800;color:#334155;text-transform:uppercase;">⏳ Timeline Comparison</span>
+              <span class="legend-pill pill-green">Unspecified Past &rarr; NOW</span>
+            </div>
+            <svg viewBox="0 0 600 130" style="width:100%;height:auto;" role="img" aria-label="Timeline showing unspecified past connected to NOW">
+              <line x1="28" y1="65" x2="565" y2="65" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round" />
+              <polygon points="565,58 584,65 565,72" fill="#94a3b8" />
+
+              <!-- Finished Past (Red) -->
+              <circle cx="95" cy="65" r="10" fill="#b91c1c" />
+              <text x="95" y="34" text-anchor="middle" fill="#b91c1c" font-size="12" font-weight="800">Finished Past</text>
+              <text x="95" y="95" text-anchor="middle" fill="#64748b" font-size="11" font-weight="600">"Yesterday / In 2022"</text>
+              <text x="95" y="112" text-anchor="middle" fill="#b91c1c" font-size="11" font-weight="700">(Simple Past Only)</text>
+
+              <!-- Bridge -->
+              <defs>
+                <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#1d4ed8" />
+                  <stop offset="100%" stop-color="#15803d" />
+                </linearGradient>
+              </defs>
+              <rect x="240" y="59" width="265" height="12" rx="6" fill="url(#bridgeGrad)" />
+
+              <!-- Unspecified Past (?) -->
+              <circle cx="240" cy="65" r="13" fill="#1d4ed8" stroke="#dbeafe" stroke-width="4" />
+              <text x="240" y="69" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">?</text>
+              <text x="240" y="34" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="800">Unspecified Past</text>
+              <text x="240" y="96" text-anchor="middle" fill="#1e40af" font-size="11" font-weight="600">No exact date</text>
+
+              <!-- NOW Node -->
+              <circle cx="505" cy="65" r="13" fill="#15803d" stroke="#dcfce7" stroke-width="4" />
+              <text x="505" y="69" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800">NOW</text>
+              <text x="505" y="34" text-anchor="middle" fill="#15803d" font-size="12" font-weight="800">Experience Up to Now</text>
+              <text x="505" y="96" text-anchor="middle" fill="#14532d" font-size="11" font-weight="600">Present result</text>
+            </svg>
+          </div>
+
+          <!-- Two-Piece Formula Summary -->
+          <div style="background:var(--bg-page);border:1px solid var(--border-light);border-radius:1rem;padding:1rem;display:flex;flex-direction:column;justify-content:space-between;gap:0.75rem;">
+            <span style="font-size:0.75rem;font-weight:800;color:#334155;text-transform:uppercase;">🧩 The Two-Piece Formula</span>
+            <div class="grid-2">
+              <div style="background:var(--blue-bg);border:2px solid var(--blue-border);border-radius:0.85rem;padding:0.75rem;color:var(--blue-text);">
+                <span style="font-size:0.65rem;font-weight:800;text-transform:uppercase;">Piece 1 (Blue)</span>
+                <h4 style="font-size:0.9rem;font-weight:800;">Auxiliary Verb</h4>
+                <p style="font-size:0.76rem;font-weight:700;background:rgba(255,255,255,0.85);padding:0.45rem;border-radius:0.55rem;margin-top:0.4rem;">
+                  I/You/We/They + <strong>have</strong><br/>
+                  He/She/It + <strong>has</strong>
+                </p>
+              </div>
+              <div style="background:var(--green-bg);border:2px solid var(--green-border);border-radius:0.85rem;padding:0.75rem;color:var(--green-text);">
+                <span style="font-size:0.65rem;font-weight:800;text-transform:uppercase;">Piece 2 (Green)</span>
+                <h4 style="font-size:0.9rem;font-weight:800;">Past Participle</h4>
+                <p style="font-size:0.76rem;font-weight:700;background:rgba(255,255,255,0.85);padding:0.45rem;border-radius:0.55rem;margin-top:0.4rem;">
+                  Regular: <strong>-ed</strong> (<em>visited</em>)<br/>
+                  Irregular: <strong>3rd form</strong> (<em>seen</em>)
+                </p>
+              </div>
+            </div>
+            <div style="background:#ffffff;border:1px solid var(--border-light);border-radius:0.65rem;padding:0.55rem 0.75rem;font-size:0.78rem;color:#334155;">
+              <strong>🇺🇸 US vs. 🇬🇧 UK Rule:</strong> With <em>just / already / yet</em>, UK uses Present Perfect (<em>"He has just arrived"</em>); casual US sometimes uses Simple Past (<em>"He just arrived"</em>). In B1 exams, always use Present Perfect!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part B: Interactive Lego Sentence Builder + US/UK Audio -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-green">Module 2B &bull; Interactive Sentence Constructor + Audio</span>
+        <h2 class="section-title">🧱 Lego Sentence Builder (With US 🇺🇸 &amp; UK 🇬🇧 Audio)</h2>
+        <p class="section-desc">
+          Pick a <strong>Subject</strong>, <strong>Blue Auxiliary</strong>, <strong>Green Past Participle</strong>, and <strong>US/UK Complement</strong>. Test subject-verb agreement and play both accents!
+        </p>
+
+        <div class="lego-controls" style="margin-top:1rem;">
+          <div>
+            <label for="lego-subj" style="display:block;font-size:0.72rem;font-weight:800;margin-bottom:0.3rem;color:#334155;">1. SUBJECT</label>
+            <select id="lego-subj" onchange="updateLegoBuilder()" class="select-field">
+              <option value="I">I</option>
+              <option value="You">You</option>
+              <option value="She">She</option>
+              <option value="He">He</option>
+              <option value="We">We</option>
+              <option value="They">They</option>
+              <option value="My sister">My sister</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="lego-aux" style="display:block;font-size:0.72rem;font-weight:800;margin-bottom:0.3rem;color:#1d4ed8;">2. BLUE AUXILIARY</label>
+            <select id="lego-aux" onchange="updateLegoBuilder()" class="select-field select-blue">
+              <option value="have">have</option>
+              <option value="has">has</option>
+              <option value="haven't">haven't</option>
+              <option value="hasn't">hasn't</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="lego-part" style="display:block;font-size:0.72rem;font-weight:800;margin-bottom:0.3rem;color:#15803d;">3. GREEN PAST PARTICIPLE</label>
+            <select id="lego-part" onchange="updateLegoBuilder()" class="select-field select-green">
+              <option value="visited|visited">visited</option>
+              <option value="played|played">played</option>
+              <option value="eaten|eaten">eaten</option>
+              <option value="seen|seen">seen</option>
+              <option value="traveled|travelled">traveled (US) / travelled (UK)</option>
+              <option value="gotten|got">gotten (US) / got (UK)</option>
+              <option value="learned|learnt">learned (US) / learnt (UK)</option>
+              <option value="broken|broken">broken</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="lego-comp" style="display:block;font-size:0.72rem;font-weight:800;margin-bottom:0.3rem;color:#334155;">4. US / UK COMPLEMENT</label>
+            <select id="lego-comp" onchange="updateLegoBuilder()" class="select-field">
+              <option value="soccer in the park|football in the park">soccer (US) / football (UK)</option>
+              <option value="that new movie|that new film">movie (US) / film (UK)</option>
+              <option value="a new cell phone|a new mobile phone">cell phone (US) / mobile phone (UK)</option>
+              <option value="French fries with cheese|chips with cheese">French fries (US) / chips (UK)</option>
+              <option value="abroad on vacation|abroad on holiday">on vacation (US) / on holiday (UK)</option>
+              <option value="London twice|London twice">London twice</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Validation Stage & Audio Buttons -->
+        <div id="lego-stage" class="lego-stage" style="margin-top:1rem;">
+          <div class="flex-between">
+            <div id="lego-status-msg" style="font-size:0.86rem;font-weight:800;color:#15803d;"></div>
+            <button id="btn-lego-fix" onclick="autoFixLego()" class="btn btn-primary btn-sm hidden">
+              🔧 Auto-Fix Auxiliary
+            </button>
+          </div>
+
+          <div id="lego-visual-row" class="lego-blocks-row"></div>
+
+          <div style="background:#ffffff;border:1px solid var(--border-light);border-radius:0.85rem;padding:0.9rem;display:flex;flex-direction:column;gap:0.65rem;">
+            <div class="flex-between">
+              <div>
+                <span style="font-size:0.68rem;font-weight:800;color:#1d4ed8;text-transform:uppercase;">🇺🇸 American English Output:</span>
+                <p id="lego-us-sentence" style="font-size:0.98rem;font-weight:700;margin-top:0.15rem;"></p>
+              </div>
+              <button onclick="speakLego('en-US', this)" class="btn btn-primary btn-sm">🇺🇸 Audio (US)</button>
+            </div>
+            <div style="border-top:1px solid var(--border-light);padding-top:0.65rem;" class="flex-between">
+              <div>
+                <span style="font-size:0.68rem;font-weight:800;color:#3730a3;text-transform:uppercase;">🇬🇧 British English Output:</span>
+                <p id="lego-uk-sentence" style="font-size:0.98rem;font-weight:700;margin-top:0.15rem;"></p>
+              </div>
+              <button onclick="speakLego('en-GB', this)" class="btn btn-indigo btn-sm">🇬🇧 Audio (UK)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part C: 5-Sentence Error Spotter Drill -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-red">Module 2C &bull; Trap Detection</span>
+            <h2 class="section-title">🕵️ Error Spotter Drill (5 Sentences)</h2>
+            <p class="section-desc">
+              Click directly on the <strong>incorrect word</strong> in each sentence, or click <strong>"✓ No Error"</strong> if the sentence is already correct.
+            </p>
+          </div>
+          <span class="legend-pill pill-green" style="font-size:0.82rem;padding:0.45rem 0.85rem;">
+            Solved: <strong id="spotter-count">0</strong> / 5
+          </span>
+        </div>
+
+        <div id="spotter-list" style="display:flex;flex-direction:column;gap:0.85rem;margin-top:1rem;">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+
+      <div class="flex-between">
+        <button onclick="switchTab(1)" class="btn btn-secondary">&larr; 1. Verb Cards</button>
+        <button onclick="switchTab(3)" class="btn btn-primary">Continue to Module 3: Guided Practice &amp; Listening &rarr;</button>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 3: "3. GUIDED PRACTICE & LISTENING"                               -->
+    <!-- ===================================================================== -->
+    <section id="module-3" class="module-section hidden">
+
+      <!-- Part A: Color-Coded Gap Fill (6 Sentences) -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-green">Module 3A &bull; Dual-Box Color Scaffolding</span>
+            <h2 class="section-title">Color-Coded Gap Fill (6 Sentences)</h2>
+            <p class="section-desc">
+              Write the <strong style="color:#1d4ed8;">auxiliary</strong> (<em>have / has / haven't / hasn't</em>) in the <strong>BLUE box</strong> and the <strong style="color:#15803d;">past participle</strong> in the <strong>GREEN box</strong>. Both 🇺🇸 US and 🇬🇧 UK spellings are accepted!
+            </p>
+          </div>
+          <button onclick="checkAllGuidedGaps()" class="btn btn-success">✓ Check All 6 Sentences</button>
+        </div>
+
+        <div id="guided-gaps-list" style="display:flex;flex-direction:column;gap:0.85rem;margin-top:1rem;">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Part B: Listening Comprehension (US & UK Audio Tracks via Web Speech API) -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-purple">Module 3B &bull; Receptive Audio Comprehension (No Speaking)</span>
+            <h2 class="section-title">🎧 Listening Comprehension: US 🇺🇸 &amp; UK 🇬🇧 Audio Tracks</h2>
+            <p class="section-desc">
+              Listen to two short teen stories in American and British accents. Use the speed toggle (<strong>1.0x Normal</strong> / <strong>0.8x Clear Slow</strong>) and answer 4 questions per track.
+            </p>
+          </div>
+          <button onclick="stopAllSpeech()" class="btn btn-secondary btn-sm">⏹ Stop Audio</button>
+        </div>
+
+        <div class="grid-2" style="margin-top:1rem;">
+          <!-- AUDIO TRACK 1: US ACCENT -->
+          <div class="audio-track-card">
+            <div class="flex-between">
+              <span class="section-eyebrow eyebrow-blue" style="margin:0;">Audio Track 1 &bull; 🇺🇸 US Accent</span>
+              <div class="speed-group" role="group" aria-label="US Track Speed">
+                <button onclick="setTrackSpeed('us', 1.0)" id="speed-us-1" class="speed-btn active">1.0x Normal</button>
+                <button onclick="setTrackSpeed('us', 0.8)" id="speed-us-08" class="speed-btn">0.8x Clear Slow</button>
+              </div>
+            </div>
+
+            <h3 style="font-size:1.05rem;font-weight:800;">🎙️ Maya's Chicago Teen Vlog</h3>
+            <p style="font-size:0.8rem;color:#475569;">An American 7th grader shares her school, sports, food, and travel experiences.</p>
+
+            <div style="display:flex;flex-wrap:wrap;gap:0.45rem;">
+              <button onclick="playListeningTrack('us', this)" class="btn btn-primary btn-sm">▶ Play US Track</button>
+              <button onclick="stopAllSpeech()" class="btn btn-secondary btn-sm">⏹ Stop</button>
+              <button onclick="toggleTrackTranscript('us')" id="btn-trans-us" class="btn btn-amber btn-sm">📜 Show Transcript</button>
+            </div>
+
+            <div id="trans-box-us" class="transcript-drawer hidden">
+              <strong>🇺🇸 US Transcript:</strong> "Hi! I'm Maya from Chicago. This year <span class="token-blue">has</span> <span class="token-green">been</span> super exciting! I <span class="token-blue">have</span> <span class="token-green">played</span> soccer for my middle school team, and we <span class="token-blue">have</span> <span class="token-green">won</span> four games. My parents <span class="token-blue">have</span> just <span class="token-green">gotten</span> me a new cell phone, so I <span class="token-blue">have</span> <span class="token-green">taken</span> lots of photos. On vacation last summer, I <span class="token-blue">traveled</span> to California and ate amazing French fries by the beach, though I <span class="token-blue">haven't</span> <span class="token-green">seen</span> a whale yet!"
+            </div>
+
+            <div id="track-us-questions" style="display:flex;flex-direction:column;gap:0.75rem;">
+              <!-- Populated via JavaScript -->
+            </div>
+          </div>
+
+          <!-- AUDIO TRACK 2: UK ACCENT -->
+          <div class="audio-track-card">
+            <div class="flex-between">
+              <span class="section-eyebrow eyebrow-indigo" style="margin:0;">Audio Track 2 &bull; 🇬🇧 UK Accent</span>
+              <div class="speed-group" role="group" aria-label="UK Track Speed">
+                <button onclick="setTrackSpeed('uk', 1.0)" id="speed-uk-1" class="speed-btn active">1.0x Normal</button>
+                <button onclick="setTrackSpeed('uk', 0.8)" id="speed-uk-08" class="speed-btn">0.8x Clear Slow</button>
+              </div>
+            </div>
+
+            <h3 style="font-size:1.05rem;font-weight:800;">🎙️ Oliver's Manchester School Story</h3>
+            <p style="font-size:0.8rem;color:#475569;">A British student talks about his travel, school subjects, and everyday experiences.</p>
+
+            <div style="display:flex;flex-wrap:wrap;gap:0.45rem;">
+              <button onclick="playListeningTrack('uk', this)" class="btn btn-indigo btn-sm">▶ Play UK Track</button>
+              <button onclick="stopAllSpeech()" class="btn btn-secondary btn-sm">⏹ Stop</button>
+              <button onclick="toggleTrackTranscript('uk')" id="btn-trans-uk" class="btn btn-amber btn-sm">📜 Show Transcript</button>
+            </div>
+
+            <div id="trans-box-uk" class="transcript-drawer hidden">
+              <strong>🇬🇧 UK Transcript:</strong> "Hello, I'm Oliver from Manchester! Since September, I <span class="token-blue">have</span> <span class="token-green">learnt</span> how to code in my computer club, and our class <span class="token-blue">has</span> <span class="token-green">watched</span> a brilliant science film. During our school holiday, my family <span class="token-blue">has</span> <span class="token-green">travelled</span> to Edinburgh by train, and we <span class="token-blue">have</span> <span class="token-green">eaten</span> traditional fish and chips! I <span class="token-blue">have</span> already <span class="token-green">got</span> my football boots ready for Saturday's match, but I <span class="token-blue">haven't</span> <span class="token-green">broken</span> my personal goal record yet."
+            </div>
+
+            <div id="track-uk-questions" style="display:flex;flex-direction:column;gap:0.75rem;">
+              <!-- Populated via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part C: Solo Self-Paced Personal Experience Grid -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-indigo">Module 3C &bull; Solo Self-Paced Reflection Activity</span>
+            <h2 class="section-title">🪞 My Personal Experience Grid (Have you ever...?)</h2>
+            <p class="section-desc">
+              Reflect on your own life experiences at your own pace. Click <strong>"Yes, I have ✓"</strong> or <strong>"No, I haven't ✗"</strong> on each card to automatically generate and verify your personal Present Perfect sentence in US &amp; UK English.
+            </p>
+          </div>
+          <button onclick="resetPeerGrid()" class="btn btn-secondary btn-sm">🔄 Reset Grid</button>
+        </div>
+
+        <div id="peer-complete-banner" class="hidden" style="background:#15803d;color:#ffffff;padding:0.7rem;border-radius:0.75rem;text-align:center;font-weight:800;font-size:0.86rem;margin-top:0.85rem;">
+          🎉 All 4 personal experience reflections completed! Ready for the B1 Exam Quiz.
+        </div>
+
+        <div id="peer-grid-container" class="grid-2" style="margin-top:1rem;">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+
+      <div class="flex-between">
+        <button onclick="switchTab(2)" class="btn btn-secondary">&larr; 2. Formula &amp; Error Lab</button>
+        <button onclick="switchTab(4)" class="btn btn-success">Continue to Module 4: B1 Exam Quiz &rarr;</button>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 4: "4. B1 EXAM QUIZ (PET · IELTS · FCE)" — 16 ITEMS               -->
+    <!-- ===================================================================== -->
+    <section id="module-4" class="module-section hidden">
+
+      <!-- Exam Header -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <span class="section-eyebrow eyebrow-indigo">Module 4 &bull; 16-Item International Exam Simulation (50 Points Total)</span>
+            <h2 class="section-title">B1 Exam Quiz: Cambridge PET &middot; IELTS &middot; Cambridge First FCE</h2>
+            <p class="section-desc">
+              Complete all 4 exam parts (<strong>50 points total</strong>). Both <strong>🇺🇸 US</strong> and <strong>🇬🇧 UK</strong> spellings are automatically accepted, and you will receive targeted feedback on what to review.
+            </p>
+          </div>
+          <button onclick="toggleExamGuide()" id="btn-exam-guide" class="btn btn-amber btn-sm">💡 Show Exam Rules &amp; Scoring</button>
+        </div>
+
+        <div id="exam-rules-drawer" class="grid-3 hidden" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border-light);">
+          <div style="background:var(--blue-bg-soft);padding:0.85rem;border-radius:0.75rem;border:1px solid #bfdbfe;font-size:0.8rem;">
+            <strong style="color:#1d4ed8;">Part 1 &amp; 2 — Cambridge PET (22 pts):</strong><br/>
+            Part 1: 5 items &times; 2 pts = <strong>10 pts</strong>.<br/>
+            Part 2: 4 items &times; 3 pts = <strong>12 pts</strong> (write <strong>ONE WORD ONLY</strong>).
+          </div>
+          <div style="background:var(--purple-bg);padding:0.85rem;border-radius:0.75rem;border:1px solid #d8b4fe;font-size:0.8rem;">
+            <strong style="color:#6b21a8;">Part 3 — IELTS Completion (16 pts):</strong><br/>
+            4 items &times; 4 pts = <strong>16 pts</strong>. Write <strong>NO MORE THAN TWO WORDS</strong> per gap. US and UK spellings both score 100%.
+          </div>
+          <div style="background:var(--amber-bg);padding:0.85rem;border-radius:0.75rem;border:1px solid #fcd34d;font-size:0.8rem;">
+            <strong style="color:#92400e;">Part 4 — FCE B1+ Bridge (12 pts):</strong><br/>
+            3 items &times; 4 pts = <strong>12 pts</strong>. Rewrite each sentence in <strong>2 to 5 words</strong> including the bold keyword (<strong>EVER, NEVER, SINCE</strong>).
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 1: CAMBRIDGE B1 PRELIMINARY (PET) READING PART 5 (5 ITEMS) -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-blue">Part 1 &bull; Cambridge B1 Preliminary (PET) &mdash; Reading Part 5 (Items 1&ndash;5 &bull; 2 pts each = 10 pts)</span>
+        <h3 class="section-title" style="font-size:1.12rem;">Multiple-Choice Cloze: Choose A, B, C, or D for each gap (1&ndash;5).</h3>
+
+        <div class="exam-passage" style="margin-top:0.85rem;">
+          <h4 style="font-weight:800;font-size:0.98rem;margin-bottom:0.35rem;">🌍 "Our International Student Digital Magazine"</h4>
+          <p>
+            Since the beginning of the school year, our Grade 7 journalism team
+            <span id="pet5-slot-1" class="token-blue" style="margin:0 0.25rem;">(1) ____________</span>
+            fifteen interviews with students around the globe. Our editor, Leo,
+            <span id="pet5-slot-2" class="token-green" style="margin:0 0.25rem;">(2) ____________</span>
+            to three youth media workshops in London and New York. During those trips, he has met young writers and
+            <span id="pet5-slot-3" class="token-green" style="margin:0 0.25rem;">(3) ________</span>
+            dozens of photos for our website. Have you
+            <span id="pet5-slot-4" style="background:#f3e8ff;color:#6b21a8;border:1.5px solid #9333ea;font-weight:700;padding:0.05rem 0.42rem;border-radius:0.4rem;margin:0 0.25rem;">(4) ______</span>
+            read our dual US/UK culture column? We haven't published our December podcast episode
+            <span id="pet5-slot-5" style="background:#f3e8ff;color:#6b21a8;border:1.5px solid #9333ea;font-weight:700;padding:0.05rem 0.42rem;border-radius:0.4rem;margin:0 0.25rem;">(5) _____</span>,
+            but it will be online this Friday!
+          </p>
+        </div>
+
+        <div id="pet5-questions-grid" class="grid-3" style="margin-top:1rem;">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- PART 2: CAMBRIDGE B1 PRELIMINARY (PET) READING PART 6 (4 ITEMS) -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-green">Part 2 &bull; Cambridge B1 Preliminary (PET) &mdash; Reading Part 6 (Items 6&ndash;9 &bull; 3 pts each = 12 pts)</span>
+        <h3 class="section-title" style="font-size:1.12rem;">Open Cloze: Type <u>ONE WORD ONLY</u> in each gap (have, has, ever, never, yet, already, since, for).</h3>
+
+        <div class="exam-passage" style="margin-top:0.85rem;">
+          <p style="font-size:0.78rem;font-weight:700;color:#64748b;border-bottom:1px solid #e2e8f0;padding-bottom:0.45rem;margin-bottom:0.65rem;">
+            <strong>From:</strong> Sofia (Exchange Student) &nbsp;|&nbsp; <strong>Subject:</strong> My first month abroad!
+          </p>
+          <p>
+            Hi everyone! My host family
+            <span style="display:inline-flex;align-items:center;gap:0.25rem;margin:0 0.25rem;">
+              <strong style="font-size:0.75rem;color:#1d4ed8;">(6)</strong>
+              <input type="text" id="pet6-input-6" oninput="updateGlobalProgress()" placeholder="1 word" autocomplete="off" class="exam-inline-input" />
+            </span>
+            already taken me to the science museum and the historic castle. All my new classmates
+            <span style="display:inline-flex;align-items:center;gap:0.25rem;margin:0 0.25rem;">
+              <strong style="font-size:0.75rem;color:#1d4ed8;">(7)</strong>
+              <input type="text" id="pet6-input-7" oninput="updateGlobalProgress()" placeholder="1 word" autocomplete="off" class="exam-inline-input" />
+            </span>
+            been very welcoming to me. Have you
+            <span style="display:inline-flex;align-items:center;gap:0.25rem;margin:0 0.25rem;">
+              <strong style="font-size:0.75rem;color:#6b21a8;">(8)</strong>
+              <input type="text" id="pet6-input-8" oninput="updateGlobalProgress()" placeholder="1 word" autocomplete="off" class="exam-inline-input" style="border-color:#9333ea;color:#6b21a8;" />
+            </span>
+            tried authentic Scottish shortbread? I have lived in this town
+            <span style="display:inline-flex;align-items:center;gap:0.25rem;margin:0 0.25rem;">
+              <strong style="font-size:0.75rem;color:#6b21a8;">(9)</strong>
+              <input type="text" id="pet6-input-9" oninput="updateGlobalProgress()" placeholder="1 word" autocomplete="off" class="exam-inline-input" style="border-color:#9333ea;color:#6b21a8;" />
+            </span>
+            September, and I feel right at home!
+          </p>
+        </div>
+      </div>
+
+      <!-- PART 3: IELTS SENTENCE COMPLETION (4 ITEMS — MAX 2 WORDS) -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-purple">Part 3 &bull; IELTS Sentence Completion (Items 10&ndash;13 &bull; 4 pts each = 16 pts)</span>
+        <h3 class="section-title" style="font-size:1.12rem;">Complete each sentence using <u>NO MORE THAN TWO WORDS</u> from the reading text.</h3>
+
+        <div class="exam-passage" style="background:#faf5ff;border-color:#e9d5ff;margin-top:0.85rem;">
+          <h4 style="font-weight:800;font-size:0.95rem;color:#581c87;margin-bottom:0.35rem;">📚 Reading Text: Teen Digital Learning &amp; Global Classrooms</h4>
+          <p style="font-size:0.9rem;line-height:1.65;">
+            In recent years, secondary schools have transformed how teenagers collaborate internationally. Thousands of students have <strong>traveled</strong> (US) / <strong>travelled</strong> (UK) abroad on short-term study grants, while many others have <strong>gotten</strong> (US) / <strong>got</strong> (UK) virtual mentorships with partner classrooms. Education researchers confirm that learners in these programs have <strong>learned</strong> (US) / <strong>learnt</strong> (UK) valuable teamwork skills. Additionally, science teachers have <strong>chosen</strong> interactive digital notebooks to track student progress across the semester.
+          </p>
+        </div>
+
+        <div id="ielts-items-list" style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1rem;">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- PART 4: CAMBRIDGE B2 FIRST (FCE) USE OF ENGLISH PART 4 (3 ITEMS — B1+ BRIDGE) -->
+      <div class="card">
+        <span class="section-eyebrow eyebrow-amber">Part 4 &bull; Cambridge B2 First (FCE) Use of English Part 4 &mdash; B1+ Bridge (Items 14&ndash;16 &bull; 4 pts each = 12 pts)</span>
+        <h3 class="section-title" style="font-size:1.12rem;">
+          Complete the second sentence so that it has a similar meaning to the first sentence, using the <strong>KEY WORD</strong> given. Do not change the word given. Use between <strong>TWO and FIVE words</strong>.
+        </h3>
+
+        <div id="fce-items-list" style="display:flex;flex-direction:column;gap:0.85rem;margin-top:1rem;">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Submit Exam Bar -->
+      <div class="exam-submit-bar">
+        <div>
+          <h3 style="font-size:1.1rem;font-weight:800;">Ready to grade your B1/B1+ Exam Quiz (Score out of 50)?</h3>
+          <p style="font-size:0.82rem;color:#cbd5e1;margin-top:0.2rem;">
+            Enter your name and class group below to calculate your score out of 50 and generate your personalized review plan.
+          </p>
+          <div class="student-id-row">
+            <input type="text" id="student-name-input" placeholder="Student Full Name (e.g., Sofia Gomez)" class="student-id-input" />
+            <input type="text" id="student-group-input" placeholder="Class / Group (e.g., 7A)" class="student-id-input" style="min-width:150px;" />
+          </div>
+        </div>
+        <div style="display:flex;gap:0.65rem;">
+          <button onclick="resetB1Exam()" class="btn btn-secondary">🔄 Reset Exam</button>
+          <button onclick="gradeB1Exam()" class="btn btn-success btn-lg">✓ Submit &amp; Grade Exam</button>
+        </div>
+      </div>
+
+      <!-- Diagnostic Results Dashboard -->
+      <div id="exam-diagnostic-panel" class="diagnostic-panel hidden">
+        <div class="flex-between" style="border-bottom:1px solid var(--border-light);padding-bottom:1rem;">
+          <div>
+            <span id="cefr-result-badge" class="section-eyebrow eyebrow-green" style="font-size:0.78rem;padding:0.35rem 0.85rem;border-radius:999px;">
+              CEFR Readiness Level
+            </span>
+            <h3 style="font-size:1.75rem;font-weight:800;margin-top:0.35rem;">
+              Final Score: <span id="diag-total-score" style="color:#1d4ed8;">0 / 50 pts</span> (<span id="diag-total-pct">0%</span>)
+            </h3>
+            <p id="diag-student-meta" style="font-size:0.84rem;font-weight:800;color:#0f172a;margin-top:0.25rem;"></p>
+            <p id="diag-summary-msg" style="font-size:0.88rem;color:#475569;margin-top:0.25rem;"></p>
+          </div>
+          <button onclick="resetB1Exam()" class="btn btn-primary no-print">🔄 Retake Exam</button>
+        </div>
+
+        <!-- Personalized Review & Study Plan (What Needs to Be Reviewed) -->
+        <div id="diag-study-plan" class="review-plan-box">
+          <!-- Populated dynamically after grading -->
+        </div>
+
+        <!-- Export & Submit Results to Teacher -->
+        <div class="export-box no-print">
+          <div class="flex-between">
+            <div>
+              <span class="section-eyebrow eyebrow-blue" style="margin-bottom:0.2rem;">🎓 Google Classroom &amp; Teacher Submission</span>
+              <h4 style="font-size:0.98rem;font-weight:800;color:#0f172a;">Send Your Score (out of 50) &amp; Answer Report</h4>
+              <p style="font-size:0.78rem;color:#475569;">Use any of the buttons below to submit your official results in Google Classroom.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <button onclick="copyShortClassroomSummary()" class="btn btn-indigo btn-sm">🎓 Copy Short Classroom Summary</button>
+              <button onclick="copyExamReport()" class="btn btn-primary btn-sm">📋 Copy Full Report</button>
+              <button onclick="downloadExamReportTxt()" class="btn btn-success btn-sm">💾 Download .TXT File</button>
+              <button onclick="printExamReportPdf()" class="btn btn-dark btn-sm">🖨️ Print / Save as PDF</button>
+            </div>
+          </div>
+
+          <div class="classroom-steps-banner">
+            <strong>📌 How to turn in on Google Classroom (2 Options):</strong><br/>
+            &bull; <strong>Option 1 (Fastest — Private Comment):</strong> Click <strong>"🎓 Copy Short Classroom Summary"</strong> (or <em>Copy Full Report</em>) &rarr; open your Google Classroom assignment &rarr; paste it inside <strong>Private comments (Comentarios privados)</strong> &rarr; click <strong>Mark as done (Marcar como completada)</strong>.<br/>
+            &bull; <strong>Option 2 (File Attachment):</strong> Click <strong>"💾 Download .TXT File"</strong> &rarr; in Google Classroom click <strong>+ Add or create &rarr; File</strong> &rarr; upload the downloaded <code>.txt</code> file &rarr; click <strong>Turn in (Entregar)</strong>.
+          </div>
+
+          <pre id="export-report-preview" class="report-preview-pre"></pre>
+        </div>
+
+        <!-- 3 Exam Breakdown Cards -->
+        <div class="grid-3">
+          <div style="background:var(--blue-bg-soft);border:1px solid #93c5fd;border-radius:0.9rem;padding:1rem;">
+            <span style="font-size:0.72rem;font-weight:800;color:#1d4ed8;text-transform:uppercase;">Cambridge PET (B1)</span>
+            <p id="diag-pet-score" style="font-size:1.45rem;font-weight:800;margin-top:0.25rem;">0 / 22 pts</p>
+            <span style="font-size:0.75rem;color:#475569;">Part 5 Cloze (10 pts) + Part 6 Open Cloze (12 pts)</span>
+          </div>
+          <div style="background:var(--purple-bg);border:1px solid #d8b4fe;border-radius:0.9rem;padding:1rem;">
+            <span style="font-size:0.72rem;font-weight:800;color:#6b21a8;text-transform:uppercase;">IELTS Completion</span>
+            <p id="diag-ielts-score" style="font-size:1.45rem;font-weight:800;margin-top:0.25rem;">0 / 16 pts</p>
+            <span style="font-size:0.75rem;color:#475569;">Sentence Completion Max 2 Words (4 &times; 4 pts)</span>
+          </div>
+          <div style="background:var(--amber-bg);border:1px solid #fcd34d;border-radius:0.9rem;padding:1rem;">
+            <span style="font-size:0.72rem;font-weight:800;color:#92400e;text-transform:uppercase;">Cambridge FCE (B1+ Bridge)</span>
+            <p id="diag-fce-score" style="font-size:1.45rem;font-weight:800;margin-top:0.25rem;">0 / 12 pts</p>
+            <span style="font-size:0.75rem;color:#475569;">Key Word Transformations (3 &times; 4 pts)</span>
+          </div>
+        </div>
+
+        <!-- Per-Item Explanations -->
+        <div>
+          <h4 style="font-size:1rem;font-weight:800;margin-bottom:0.65rem;">📋 Per-Item Explanations (Items 1&ndash;16 &bull; 50 Points Total)</h4>
+          <div id="diag-review-list" style="display:flex;flex-direction:column;gap:0.6rem;">
+            <!-- Populated via JavaScript -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container flex-between">
+      <span><strong>Present Perfect Mastery</strong> &bull; 7th Grade Foundations to B1 Exam Prep (US 🇺🇸 &amp; UK 🇬🇧)</span>
+      <span><strong style="color:#1d4ed8;">Blue = Auxiliary</strong> | <strong style="color:#15803d;">Green = Past Participle</strong> | <strong style="color:#b91c1c;">Red = Simple Past Trap</strong></span>
+    </div>
+  </footer>
+
+  <!-- ======================================================================= -->
+  <!-- COMPLETE JAVASCRIPT LOGIC                                               -->
+  <!-- ======================================================================= -->
+  <script>
+    /* -------------------------------------------------------------------------
+       1. DATA: 15 UNLOCKABLE VERB CARDS (10 CORE + 5 B1 & US/UK DUAL)
+       ------------------------------------------------------------------------- */
+    const VERB_CARDS_DATA = [
+      // 5 Core Regular Verbs
+      {
+        id: 'play', base: 'play', emoji: '⚽', category: 'regular', catLabel: 'Core Regular',
+        meaning: 'To take part in a sport or game (US: soccer / UK: football)',
+        hint: 'Regular verb: add -ed to the base verb.',
+        validParticiples: ['played'],
+        traps: ['play', 'playing', 'plaied'],
+        trapDisplay: 'Simple Past: played (same spelling, but ALWAYS needs blue have/has!)',
+        usParticiple: 'played',
+        usSentenceHtml: 'They <span class="token-blue">have</span> <span class="token-green">played</span> soccer in the park.',
+        usSpeech: 'Played. They have played soccer in the park.',
+        ukParticiple: 'played',
+        ukSentenceHtml: 'They <span class="token-blue">have</span> <span class="token-green">played</span> football in the park.',
+        ukSpeech: 'Played. They have played football in the park.',
+        grammarNote: 'Regular -ed ending is identical in US & UK, but the sport changes: soccer (🇺🇸 US) vs. football (🇬🇧 UK).'
+      },
+      {
+        id: 'watch', base: 'watch', emoji: '🎬', category: 'regular', catLabel: 'Core Regular',
+        meaning: 'To look at a screen or cinema show (US: movie / UK: film)',
+        hint: 'Regular verb: add -ed directly to "watch".',
+        validParticiples: ['watched'],
+        traps: ['watch', 'watching', 'watchen'],
+        trapDisplay: 'Simple Past: watched (never omit blue have/has!)',
+        usParticiple: 'watched',
+        usSentenceHtml: 'We <span class="token-blue">have</span> <span class="token-green">watched</span> that action movie twice.',
+        usSpeech: 'Watched. We have watched that action movie twice.',
+        ukParticiple: 'watched',
+        ukSentenceHtml: 'We <span class="token-blue">have</span> <span class="token-green">watched</span> that action film twice.',
+        ukSpeech: 'Watched. We have watched that action film twice.',
+        grammarNote: 'Regular -ed participle in both standards. Vocabulary contrast: movie (🇺🇸 US) vs. film (🇬🇧 UK).'
+      },
+      {
+        id: 'visit', base: 'visit', emoji: '🏛️', category: 'regular', catLabel: 'Core Regular',
+        meaning: 'To go to see a person or historic place',
+        hint: 'Regular verb: add -ed (do NOT double the "t").',
+        validParticiples: ['visited'],
+        traps: ['visit', 'visitted', 'visiting'],
+        trapDisplay: 'Trap: "visitted" (single "t") or missing blue has/have.',
+        usParticiple: 'visited',
+        usSentenceHtml: 'Sarah <span class="token-blue">has</span> <span class="token-green">visited</span> Washington, D.C. on vacation.',
+        usSpeech: 'Visited. Sarah has visited Washington D.C. on vacation.',
+        ukParticiple: 'visited',
+        ukSentenceHtml: 'Sarah <span class="token-blue">has</span> <span class="token-green">visited</span> Edinburgh on holiday.',
+        ukSpeech: 'Visited. Sarah has visited Edinburgh on holiday.',
+        grammarNote: 'Single "t" in both US & UK ("visited"). Vocabulary contrast: vacation (🇺🇸 US) vs. holiday (🇬🇧 UK).'
+      },
+      {
+        id: 'travel', base: 'travel', emoji: '✈️', category: 'regular', catLabel: 'Core Regular',
+        meaning: 'To go on a journey to another city or country',
+        hint: 'US uses 1 "l" (-led); UK uses 2 "ll" (-lled). Both are accepted!',
+        validParticiples: ['traveled', 'travelled'],
+        traps: ['travel', 'traveling', 'travelling'],
+        trapDisplay: 'Spelling Contrast: 1 "l" in US (traveled) vs. 2 "ll" in UK (travelled).',
+        usParticiple: 'traveled',
+        usSentenceHtml: 'I <span class="token-blue">have</span> <span class="token-green">traveled</span> by plane on vacation.',
+        usSpeech: 'Traveled. I have traveled by plane on vacation.',
+        ukParticiple: 'travelled',
+        ukSentenceHtml: 'I <span class="token-blue">have</span> <span class="token-green">travelled</span> by plane on holiday.',
+        ukSpeech: 'Travelled. I have travelled by plane on holiday.',
+        grammarNote: 'Classic US vs. UK spelling rule: traveled (🇺🇸 US, single "l") vs. travelled (🇬🇧 UK, double "ll").'
+      },
+      {
+        id: 'try', base: 'try', emoji: '🍟', category: 'regular', catLabel: 'Core Regular',
+        meaning: 'To taste new food or attempt a new activity',
+        hint: 'Consonant + y changes to -ied!',
+        validParticiples: ['tried'],
+        traps: ['try', 'tryed', 'trying'],
+        trapDisplay: 'Spelling Trap: never write "tryed" — change y → ied (tried)!',
+        usParticiple: 'tried',
+        usSentenceHtml: 'He <span class="token-blue">has</span> <span class="token-green">tried</span> French fries with spicy sauce.',
+        usSpeech: 'Tried. He has tried French fries with spicy sauce.',
+        ukParticiple: 'tried',
+        ukSentenceHtml: 'He <span class="token-blue">has</span> <span class="token-green">tried</span> chips with curry sauce.',
+        ukSpeech: 'Tried. He has tried chips with curry sauce.',
+        grammarNote: 'Spelling rule: y → ied (tried) in both US & UK. Vocabulary: French fries (🇺🇸 US) vs. chips (🇬🇧 UK).'
+      },
+
+      // 5 Core Irregular Verbs
+      {
+        id: 'eat', base: 'eat', emoji: '🌮', category: 'irregular', catLabel: 'Core Irregular',
+        meaning: 'To consume food (3rd column ends in -en)',
+        hint: 'Irregular 3rd form: eat → ate (trap) → eat__.',
+        validParticiples: ['eaten'],
+        traps: ['ate', 'eat', 'eated'],
+        trapDisplay: 'Simple Past Trap: "ate" (2nd column) — NEVER "have ate"!',
+        usParticiple: 'eaten',
+        usSentenceHtml: 'She <span class="token-blue">has</span> already <span class="token-green">eaten</span> her French fries.',
+        usSpeech: 'Eaten. She has already eaten her French fries.',
+        ukParticiple: 'eaten',
+        ukSentenceHtml: 'She <span class="token-blue">has</span> already <span class="token-green">eaten</span> her fish and chips.',
+        ukSpeech: 'Eaten. She has already eaten her fish and chips.',
+        grammarNote: 'Use "eaten" after have/has. Notice "already" comes between the blue auxiliary and green participle.'
+      },
+      {
+        id: 'see', base: 'see', emoji: '🔭', category: 'irregular', catLabel: 'Core Irregular',
+        meaning: 'To notice or view with your eyes',
+        hint: 'Irregular 3rd form: see → saw (trap) → see_.',
+        validParticiples: ['seen'],
+        traps: ['saw', 'see', 'seed'],
+        trapDisplay: 'Simple Past Trap: "saw" (2nd column) — NEVER "have saw"!',
+        usParticiple: 'seen',
+        usSentenceHtml: 'We <span class="token-blue">have</span> <span class="token-green">seen</span> that superhero movie three times.',
+        usSpeech: 'Seen. We have seen that superhero movie three times.',
+        ukParticiple: 'seen',
+        ukSentenceHtml: 'We <span class="token-blue">have</span> <span class="token-green">seen</span> that superhero film three times.',
+        ukSpeech: 'Seen. We have seen that superhero film three times.',
+        grammarNote: 'Always use "seen" (3rd column) after have/has, never Simple Past "saw".'
+      },
+      {
+        id: 'go', base: 'go', emoji: '🧭', category: 'irregular', catLabel: 'Core Irregular',
+        meaning: 'To move or travel to a place (gone = still there; been = returned)',
+        hint: 'Irregular 3rd form: go → went (trap) → g___ (or b___).',
+        validParticiples: ['gone', 'been'],
+        traps: ['went', 'go', 'goed'],
+        trapDisplay: 'Simple Past Trap: "went" (2nd column) — NEVER "has went"!',
+        usParticiple: 'gone / been',
+        usSentenceHtml: 'He <span class="token-blue">has</span> <span class="token-green">gone</span> to the soccer stadium.',
+        usSpeech: 'Gone. He has gone to the soccer stadium.',
+        ukParticiple: 'gone / been',
+        ukSentenceHtml: 'He <span class="token-blue">has</span> <span class="token-green">gone</span> to the football stadium.',
+        ukSpeech: 'Gone. He has gone to the football stadium.',
+        grammarNote: '"Has gone" means he is still at the stadium; "has been" means he went and came back. Never use "went"!'
+      },
+      {
+        id: 'break', base: 'break', emoji: '📱', category: 'irregular', catLabel: 'Core Irregular',
+        meaning: 'To damage or crack something into pieces',
+        hint: 'Irregular 3rd form: break → broke (trap) → brok__.',
+        validParticiples: ['broken'],
+        traps: ['broke', 'break', 'breaked'],
+        trapDisplay: 'Simple Past Trap: "broke" (2nd column) — NEVER "has broke"!',
+        usParticiple: 'broken',
+        usSentenceHtml: 'My brother <span class="token-blue">has</span> <span class="token-green">broken</span> his cell phone screen.',
+        usSpeech: 'Broken. My brother has broken his cell phone screen.',
+        ukParticiple: 'broken',
+        ukSentenceHtml: 'My brother <span class="token-blue">has</span> <span class="token-green">broken</span> his mobile phone screen.',
+        ukSpeech: 'Broken. My brother has broken his mobile phone screen.',
+        grammarNote: 'Irregular participle "broken" + vocabulary contrast: cell phone (🇺🇸 US) vs. mobile phone (🇬🇧 UK).'
+      },
+      {
+        id: 'do', base: 'do', emoji: '📝', category: 'irregular', catLabel: 'Core Irregular',
+        meaning: 'To perform or complete an action or homework',
+        hint: 'Irregular 3rd form: do → did (trap) → d___.',
+        validParticiples: ['done'],
+        traps: ['did', 'do', 'doed'],
+        trapDisplay: 'Simple Past Trap: "did" (2nd column) — NEVER "have did"!',
+        usParticiple: 'done',
+        usSentenceHtml: 'They <span class="token-blue">have</span> already <span class="token-green">done</span> their math homework.',
+        usSpeech: 'Done. They have already done their math homework.',
+        ukParticiple: 'done',
+        ukSentenceHtml: 'They <span class="token-blue">have</span> already <span class="token-green">done</span> their maths homework.',
+        ukSpeech: 'Done. They have already done their maths homework.',
+        grammarNote: 'Always use "done" after have/has. Bonus note: math (🇺🇸 US) vs. maths (🇬🇧 UK).'
+      },
+
+      // 5 B1 & US/UK Dual Contrast Verbs
+      {
+        id: 'learn', base: 'learn', emoji: '📚', category: 'dual', catLabel: 'B1 & US/UK Dual',
+        meaning: 'To gain knowledge or a new skill (US: learned / UK: learnt)',
+        hint: 'US ends in -ed (learned); UK often ends in -t (learnt). Both work!',
+        validParticiples: ['learned', 'learnt'],
+        traps: ['learn', 'learning'],
+        trapDisplay: 'Dual Standard: US prefers "learned" (-ed); UK frequently uses "learnt" (-t).',
+        usParticiple: 'learned',
+        usSentenceHtml: 'Elena <span class="token-blue">has</span> <span class="token-green">learned</span> how to play soccer.',
+        usSpeech: 'Learned. Elena has learned how to play soccer.',
+        ukParticiple: 'learnt (or learned)',
+        ukSentenceHtml: 'Elena <span class="token-blue">has</span> <span class="token-green">learnt</span> how to play football.',
+        ukSpeech: 'Learnt. Elena has learnt how to play football.',
+        grammarNote: 'Both "learned" (🇺🇸 US) and "learnt" (🇬🇧 UK) earn full marks in Cambridge PET, IELTS, and FCE exams.'
+      },
+      {
+        id: 'get', base: 'get', emoji: '🎁', category: 'dual', catLabel: 'B1 & US/UK Dual',
+        meaning: 'To receive, obtain, or become (US: gotten / UK: got)',
+        hint: 'US uses "gotten"; UK uses "got". Both are accepted!',
+        validParticiples: ['gotten', 'got'],
+        traps: ['get', 'getting'],
+        trapDisplay: 'Major US/UK Difference: "have gotten" (US) vs. "have got" (UK).',
+        usParticiple: 'gotten',
+        usSentenceHtml: 'She <span class="token-blue">has</span> just <span class="token-green">gotten</span> a new cell phone.',
+        usSpeech: 'Gotten. She has just gotten a new cell phone.',
+        ukParticiple: 'got',
+        ukSentenceHtml: 'She <span class="token-blue">has</span> just <span class="token-green">got</span> a new mobile phone.',
+        ukSpeech: 'Got. She has just got a new mobile phone.',
+        grammarNote: 'In 🇺🇸 US English, "gotten" is the standard participle for receiving/becoming; 🇬🇧 UK uses "got".'
+      },
+      {
+        id: 'write', base: 'write', emoji: '✍️', category: 'dual', catLabel: 'B1 & US/UK Dual',
+        meaning: 'To compose text, stories, or articles (note the double "tt")',
+        hint: 'Irregular 3rd form with double "tt": write → wrote (trap) → wri__en.',
+        validParticiples: ['written'],
+        traps: ['wrote', 'write', 'writen', 'writed'],
+        trapDisplay: 'Simple Past Trap: "wrote" (2nd column) & spelling trap: double "tt" (written)!',
+        usParticiple: 'written',
+        usSentenceHtml: 'Our club <span class="token-blue">has</span> <span class="token-green">written</span> twenty blog posts this semester.',
+        usSpeech: 'Written. Our club has written twenty blog posts this semester.',
+        ukParticiple: 'written',
+        ukSentenceHtml: 'Our club <span class="token-blue">has</span> <span class="token-green">written</span> twenty blog posts this term.',
+        ukSpeech: 'Written. Our club has written twenty blog posts this term.',
+        grammarNote: 'Double "tt" in "written" is mandatory in both US and UK English. Never write "has wrote".'
+      },
+      {
+        id: 'take', base: 'take', emoji: '📸', category: 'dual', catLabel: 'B1 & US/UK Dual',
+        meaning: 'To capture photos, catch transport, or carry something',
+        hint: 'Irregular 3rd form: take → took (trap) → tak__.',
+        validParticiples: ['taken'],
+        traps: ['took', 'take', 'taked'],
+        trapDisplay: 'Simple Past Trap: "took" (2nd column) — NEVER "have took"!',
+        usParticiple: 'taken',
+        usSentenceHtml: 'They <span class="token-blue">have</span> <span class="token-green">taken</span> dozens of photos on vacation.',
+        usSpeech: 'Taken. They have taken dozens of photos on vacation.',
+        ukParticiple: 'taken',
+        ukSentenceHtml: 'They <span class="token-blue">have</span> <span class="token-green">taken</span> dozens of photos on holiday.',
+        ukSpeech: 'Taken. They have taken dozens of photos on holiday.',
+        grammarNote: 'Always use 3rd-column "taken" after have/has. Vocabulary: vacation (🇺🇸 US) vs. holiday (🇬🇧 UK).'
+      },
+      {
+        id: 'forget', base: 'forget', emoji: '🧠', category: 'dual', catLabel: 'B1 & US/UK Dual',
+        meaning: 'To fail to remember something (note the double "tt")',
+        hint: 'Irregular 3rd form with double "tt": forget → forgot (trap) → forgo__en.',
+        validParticiples: ['forgotten'],
+        traps: ['forgot', 'forget', 'forgeted', 'forgoten'],
+        trapDisplay: 'Simple Past Trap: "forgot" (2nd column) — use "forgotten" (double "tt")!',
+        usParticiple: 'forgotten',
+        usSentenceHtml: 'I <span class="token-blue">haven\'t</span> <span class="token-green">forgotten</span> my cell phone today.',
+        usSpeech: 'Forgotten. I haven\'t forgotten my cell phone today.',
+        ukParticiple: 'forgotten',
+        ukSentenceHtml: 'I <span class="token-blue">haven\'t</span> <span class="token-green">forgotten</span> my mobile phone today.',
+        ukSpeech: 'Forgotten. I haven\'t forgotten my mobile phone today.',
+        grammarNote: 'Both US & UK B1 exams require "forgotten" after have/has (although "forgot" is occasionally heard in casual US speech).'
+      }
+    ];
+
+    /* -------------------------------------------------------------------------
+       2. DATA: TAB 2C ERROR SPOTTER (5 SENTENCES)
+       ------------------------------------------------------------------------- */
+    const ERROR_SPOTTER_DATA = [
+      {
+        id: 1,
+        tokens: [
+          { text: 'My sister', clickable: true },
+          { text: 'have', clickable: true },
+          { text: 'visited', clickable: true },
+          { text: 'London', clickable: true },
+          { text: 'twice.', clickable: true }
+        ],
+        wrongIndex: 1,
+        correction: 'has',
+        explanation: 'Correct! "My sister" = She (singular), so the blue auxiliary must be HAS, never "have".'
+      },
+      {
+        id: 2,
+        tokens: [
+          { text: 'We', clickable: true },
+          { text: 'have', clickable: true },
+          { text: 'ate', clickable: true },
+          { text: 'French fries (US) / chips (UK)', clickable: false },
+          { text: 'today.', clickable: true }
+        ],
+        wrongIndex: 2,
+        correction: 'eaten',
+        explanation: 'Trap caught! "Ate" is Simple Past. After "have", you need the green past participle: EATEN.'
+      },
+      {
+        id: 3,
+        tokens: [
+          { text: 'He', clickable: true },
+          { text: 'has', clickable: true },
+          { text: 'went', clickable: true },
+          { text: 'to the', clickable: false },
+          { text: 'soccer (US) / football (UK)', clickable: false },
+          { text: 'match.', clickable: true }
+        ],
+        wrongIndex: 2,
+        correction: 'gone',
+        explanation: 'Well spotted! "Went" is Simple Past. Use the green past participle GONE (or BEEN) after "has".'
+      },
+      {
+        id: 4,
+        tokens: [
+          { text: 'They', clickable: true },
+          { text: "haven't", clickable: true },
+          { text: 'watched', clickable: true },
+          { text: 'that', clickable: false },
+          { text: 'movie (US) / film (UK)', clickable: false },
+          { text: 'yet.', clickable: true }
+        ],
+        wrongIndex: -1,
+        correction: 'No Error',
+        explanation: 'Spot on! This sentence has NO error: "They" + "haven\'t" + regular participle "watched" + "yet".'
+      },
+      {
+        id: 5,
+        tokens: [
+          { text: 'I', clickable: true },
+          { text: 'have', clickable: true },
+          { text: 'forgot', clickable: true },
+          { text: 'my', clickable: false },
+          { text: 'cell phone (US) / mobile phone (UK).', clickable: false }
+        ],
+        wrongIndex: 2,
+        correction: 'forgotten',
+        explanation: 'Great catch! "Forgot" is Simple Past. The green past participle is FORGOTTEN (double "tt").'
+      }
+    ];
+
+    /* -------------------------------------------------------------------------
+       3. DATA: TAB 3A COLOR-CODED GAP FILL (6 SENTENCES)
+       ------------------------------------------------------------------------- */
+    const GUIDED_GAPS_DATA = [
+      {
+        id: 1,
+        before: 'My brother',
+        auxHint: 'auxiliary',
+        partHint: 'break',
+        after: 'his cell phone (US) / mobile phone (UK) twice.',
+        validAux: ['has'],
+        validPart: ['broken'],
+        traps: ['broke'],
+        explanation: '"My brother" = He → Blue "has" + Green irregular past participle "broken".'
+      },
+      {
+        id: 2,
+        before: 'We',
+        auxHint: 'auxiliary',
+        partHint: 'travel',
+        after: 'by plane during our summer vacation (US) / holiday (UK).',
+        validAux: ['have'],
+        validPart: ['traveled', 'travelled'],
+        traps: ['travel'],
+        explanation: '"We" → Blue "have" + Green regular participle "traveled" (US) or "travelled" (UK).'
+      },
+      {
+        id: 3,
+        before: 'I',
+        auxHint: 'negative aux',
+        partHint: 'eat',
+        after: 'sushi yet.',
+        validAux: ["haven't", 'have not'],
+        validPart: ['eaten'],
+        traps: ['ate'],
+        explanation: '"I" (negative) → Blue "haven\'t" + Green irregular participle "eaten" (never "ate").'
+      },
+      {
+        id: 4,
+        before: 'Elena',
+        auxHint: 'auxiliary',
+        partHint: 'learn',
+        after: 'how to play soccer (US) / football (UK) at school.',
+        validAux: ['has'],
+        validPart: ['learned', 'learnt'],
+        traps: ['learn'],
+        explanation: '"Elena" = She → Blue "has" + Green past participle "learned" (US) or "learnt" (UK).'
+      },
+      {
+        id: 5,
+        before: 'She',
+        auxHint: 'auxiliary',
+        partHint: 'get',
+        after: 'a new scholarship for the exchange program.',
+        validAux: ['has'],
+        validPart: ['gotten', 'got'],
+        traps: ['get'],
+        explanation: '"She" → Blue "has" + Green past participle "gotten" (US) or "got" (UK).'
+      },
+      {
+        id: 6,
+        before: 'They',
+        auxHint: 'negative aux',
+        partHint: 'forget',
+        after: 'their science project notes.',
+        validAux: ["haven't", 'have not'],
+        validPart: ['forgotten'],
+        traps: ['forgot'],
+        explanation: '"They" (negative) → Blue "haven\'t" + Green irregular participle "forgotten" (never "forgot").'
+      }
+    ];
+
+    /* -------------------------------------------------------------------------
+       4. DATA: TAB 3B LISTENING TRACKS (US & UK) & 3C PEER GRID
+       ------------------------------------------------------------------------- */
+    const LISTENING_DATA = {
+      us: {
+        lang: 'en-US',
+        script: "Hi! I'm Maya from Chicago. This year has been super exciting! I have played soccer for my middle school team, and we have won four games. My parents have just gotten me a new cell phone, so I have taken lots of photos. On vacation last summer, I traveled to California and ate amazing French fries by the beach, though I haven't seen a whale yet!",
+        questions: [
+          {
+            id: 'us1',
+            q: '1. Which sport has Maya played for her middle school team?',
+            options: ['A) Basketball', 'B) Soccer (US)', 'C) Tennis'],
+            correct: 1,
+            exp: 'Maya says: "I have played soccer for my middle school team."'
+          },
+          {
+            id: 'us2',
+            q: '2. Which US Present Perfect form does Maya use for her new cell phone?',
+            options: ['A) have just gotten', 'B) has just got', 'C) just get'],
+            correct: 0,
+            exp: 'She uses the American form: "My parents have just gotten me a new cell phone."'
+          },
+          {
+            id: 'us3',
+            q: '3. Where did Maya travel on vacation last summer?',
+            options: ['A) New York', 'B) Florida', 'C) California'],
+            correct: 2,
+            exp: 'Note the specific past time ("last summer") with Past Simple: "I traveled to California."'
+          },
+          {
+            id: 'us4',
+            q: '4. What has Maya NOT seen yet?',
+            options: ['A) A dolphin', 'B) A whale', 'C) A shark'],
+            correct: 1,
+            exp: 'Maya finishes with: "though I haven\'t seen a whale yet!"'
+          }
+        ]
+      },
+      uk: {
+        lang: 'en-GB',
+        script: "Hello, I'm Oliver from Manchester! Since September, I have learnt how to code in my computer club, and our class has watched a brilliant science film. During our school holiday, my family has travelled to Edinburgh by train, and we have eaten traditional fish and chips! I have already got my football boots ready for Saturday's match, but I haven't broken my personal goal record yet.",
+        questions: [
+          {
+            id: 'uk1',
+            q: '1. What skill has Oliver learnt since September?',
+            options: ['A) How to paint', 'B) How to code', 'C) How to swim'],
+            correct: 1,
+            exp: 'Oliver uses the British participle "learnt": "I have learnt how to code in my computer club."'
+          },
+          {
+            id: 'uk2',
+            q: '2. What has Oliver\'s class watched?',
+            options: ['A) A brilliant science film (UK)', 'B) A history documentary', 'C) A music concert'],
+            correct: 0,
+            exp: 'He uses the British term "film": "our class has watched a brilliant science film."'
+          },
+          {
+            id: 'uk3',
+            q: '3. How has Oliver\'s family travelled to Edinburgh?',
+            options: ['A) By plane', 'B) By car', 'C) By train'],
+            correct: 2,
+            exp: 'Oliver says: "my family has travelled to Edinburgh by train."'
+          },
+          {
+            id: 'uk4',
+            q: '4. Which British Present Perfect form does Oliver use for his football boots?',
+            options: ['A) have already gotten', 'B) have already got', 'C) already get'],
+            correct: 1,
+            exp: 'In UK English: "I have already got my football boots ready."'
+          }
+        ]
+      }
+    };
+
+    const PEER_GRID_DATA = [
+      {
+        id: 1,
+        emoji: '🍣',
+        text: 'eaten sushi or tacos',
+        usYes: 'I <span class="token-blue">have</span> <span class="token-green">eaten</span> sushi or tacos.',
+        ukYes: 'I <span class="token-blue">have</span> <span class="token-green">eaten</span> sushi or tacos.',
+        usNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">eaten</span> sushi or tacos yet.',
+        ukNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">eaten</span> sushi or tacos yet.',
+        speechYesUS: 'Yes, I have. I have eaten sushi or tacos.',
+        speechYesUK: 'Yes, I have. I have eaten sushi or tacos.',
+        speechNoUS: 'No, I haven\'t. I haven\'t eaten sushi or tacos yet.',
+        speechNoUK: 'No, I haven\'t. I haven\'t eaten sushi or tacos yet.'
+      },
+      {
+        id: 2,
+        emoji: '🎮',
+        text: 'played a video game all weekend',
+        usYes: 'I <span class="token-blue">have</span> <span class="token-green">played</span> a video game all weekend.',
+        ukYes: 'I <span class="token-blue">have</span> <span class="token-green">played</span> a video game all weekend.',
+        usNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">played</span> a video game all weekend yet.',
+        ukNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">played</span> a video game all weekend yet.',
+        speechYesUS: 'Yes, I have. I have played a video game all weekend.',
+        speechYesUK: 'Yes, I have. I have played a video game all weekend.',
+        speechNoUS: 'No, I haven\'t. I haven\'t played a video game all weekend yet.',
+        speechNoUK: 'No, I haven\'t. I haven\'t played a video game all weekend yet.'
+      },
+      {
+        id: 3,
+        emoji: '✈️',
+        text: 'traveled (US) / travelled (UK) to another city or country',
+        usYes: 'I <span class="token-blue">have</span> <span class="token-green">traveled</span> to another city or country.',
+        ukYes: 'I <span class="token-blue">have</span> <span class="token-green">travelled</span> to another city or country.',
+        usNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">traveled</span> to another city or country yet.',
+        ukNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">travelled</span> to another city or country yet.',
+        speechYesUS: 'Yes, I have. I have traveled to another city or country.',
+        speechYesUK: 'Yes, I have. I have travelled to another city or country.',
+        speechNoUS: 'No, I haven\'t. I haven\'t traveled to another city or country yet.',
+        speechNoUK: 'No, I haven\'t. I haven\'t travelled to another city or country yet.'
+      },
+      {
+        id: 4,
+        emoji: '📱',
+        text: 'broken a cell phone (US) / mobile phone (UK) screen or a bone',
+        usYes: 'I <span class="token-blue">have</span> <span class="token-green">broken</span> a cell phone screen or a bone.',
+        ukYes: 'I <span class="token-blue">have</span> <span class="token-green">broken</span> a mobile phone screen or a bone.',
+        usNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">broken</span> a cell phone screen or a bone yet.',
+        ukNo: 'I <span class="token-blue">haven\'t</span> <span class="token-green">broken</span> a mobile phone screen or a bone yet.',
+        speechYesUS: 'Yes, I have. I have broken a cell phone screen or a bone.',
+        speechYesUK: 'Yes, I have. I have broken a mobile phone screen or a bone.',
+        speechNoUS: 'No, I haven\'t. I haven\'t broken a cell phone screen or a bone yet.',
+        speechNoUK: 'No, I haven\'t. I haven\'t broken a mobile phone screen or a bone yet.'
+      }
+    ];
+
+    const EXAM_PET5_DATA = [
+      {
+        num: 1,
+        pts: 2,
+        topicKey: 'aux_agreement',
+        options: ['A) have written', 'B) has written', 'C) has wrote', 'D) writing'],
+        correctIdx: 1,
+        displayAns: 'has written',
+        exp: '"Our Grade 7 journalism team" is a singular collective subject (It), so it takes "has" + irregular past participle "written" (never "wrote").'
+      },
+      {
+        num: 2,
+        pts: 2,
+        topicKey: 'irregular_participles',
+        options: ['A) has went', 'B) have gone', 'C) has been', 'D) going'],
+        correctIdx: 2,
+        displayAns: 'has been',
+        exp: 'Leo visited the workshops and returned, so we use "has been" (never Simple Past "went").'
+      },
+      {
+        num: 3,
+        pts: 2,
+        topicKey: 'irregular_participles',
+        options: ['A) took', 'B) take', 'C) taken', 'D) taked'],
+        correctIdx: 2,
+        displayAns: 'taken',
+        exp: 'After "he has met ... and", the parallel verb also requires the past participle: "taken" (never Simple Past "took").'
+      },
+      {
+        num: 4,
+        pts: 2,
+        topicKey: 'time_markers',
+        options: ['A) ever', 'B) since', 'C) ago', 'D) yesterday'],
+        correctIdx: 0,
+        displayAns: 'ever',
+        exp: 'In a Present Perfect life-experience question ("Have you ____ read...?"), "ever" means "at any time in your life".'
+      },
+      {
+        num: 5,
+        pts: 2,
+        topicKey: 'time_markers',
+        options: ['A) already', 'B) just', 'C) yet', 'D) never'],
+        correctIdx: 2,
+        displayAns: 'yet',
+        exp: 'At the end of a negative Present Perfect sentence ("We haven\'t published ... ____"), we use "yet".'
+      }
+    ];
+
+    const EXAM_PET6_DATA = {
+      6: { pts: 3, topicKey: 'aux_agreement', valid: ['has'], exp: '"My host family" is singular (It) before "already taken", so the blue auxiliary is "has".' },
+      7: { pts: 3, topicKey: 'aux_agreement', valid: ['have'], exp: '"All my new classmates" is plural (They), requiring the plural blue auxiliary "have".' },
+      8: { pts: 3, topicKey: 'time_markers', valid: ['ever'], exp: 'In a Present Perfect experience question ("Have you ____ tried...?"), the missing word is "ever".' },
+      9: { pts: 3, topicKey: 'time_markers', valid: ['since'], exp: '"September" is a specific starting point in time, so we use "since" (not "for").' }
+    };
+
+    const EXAM_IELTS_DATA = [
+      {
+        num: 10,
+        pts: 4,
+        topicKey: 'us_uk_participles',
+        prefix: 'In recent years, thousands of secondary students',
+        suffix: 'abroad on short-term study grants.',
+        valid: ['have traveled', 'have travelled'],
+        displayAns: 'have traveled / have travelled',
+        exp: 'From the text ("students have traveled / travelled abroad"): both US ("have traveled") and UK ("have travelled") are accepted (2 words).'
+      },
+      {
+        num: 11,
+        pts: 4,
+        topicKey: 'us_uk_participles',
+        prefix: 'Other students who stayed in their home country',
+        suffix: 'virtual mentorships with partner classrooms.',
+        valid: ['have gotten', 'have got'],
+        displayAns: 'have gotten / have got',
+        exp: 'From the text ("others have gotten / got virtual mentorships"): both US ("have gotten") and UK ("have got") are accepted (2 words).'
+      },
+      {
+        num: 12,
+        pts: 4,
+        topicKey: 'us_uk_participles',
+        prefix: 'Learners participating in global classroom projects',
+        suffix: 'valuable teamwork skills.',
+        valid: ['have learned', 'have learnt'],
+        displayAns: 'have learned / have learnt',
+        exp: 'From the text ("learners ... have learned / learnt valuable teamwork skills"): both US ("have learned") and UK ("have learnt") earn full marks (2 words).'
+      },
+      {
+        num: 13,
+        pts: 4,
+        topicKey: 'irregular_participles',
+        prefix: 'To monitor student progress across the semester, science teachers',
+        suffix: 'interactive digital notebooks.',
+        valid: ['have chosen'],
+        displayAns: 'have chosen',
+        exp: 'From the text ("science teachers have chosen interactive digital notebooks"): plural "have" + irregular participle "chosen" (2 words).'
+      }
+    ];
+
+    const EXAM_FCE_DATA = [
+      {
+        num: 14,
+        pts: 4,
+        topicKey: 'fce_transformations',
+        firstSentence: 'She has never seen a solar eclipse before.',
+        keyWord: 'EVER',
+        secondBefore: 'It is the first time she',
+        secondAfter: 'a solar eclipse.',
+        valid: ['has ever seen'],
+        displayAns: 'has ever seen',
+        exp: '"It is the first time + Subject + has/have + EVER + past participle" → "has ever seen" (3 words).'
+      },
+      {
+        num: 15,
+        pts: 4,
+        topicKey: 'fce_transformations',
+        firstSentence: 'This is the first time Maria has tried British fish and chips.',
+        keyWord: 'NEVER',
+        secondBefore: 'Maria',
+        secondAfter: 'British fish and chips before.',
+        valid: ['has never tried'],
+        displayAns: 'has never tried',
+        exp: '"This is the first time..." transforms into Subject + has/have + NEVER + past participle → "has never tried" (3 words).'
+      },
+      {
+        num: 16,
+        pts: 4,
+        topicKey: 'fce_transformations',
+        firstSentence: 'David started learning Spanish three years ago, and he still studies it.',
+        keyWord: 'SINCE',
+        secondBefore: 'David',
+        secondAfter: 'three years ago.',
+        valid: [
+          'has learned spanish since',
+          'has learnt spanish since',
+          'has studied spanish since',
+          'has been learning spanish since'
+        ],
+        displayAns: 'has learned / learnt Spanish since',
+        exp: 'An action that began in the past and continues now uses Present Perfect + SINCE → "has learned / learnt Spanish since" (4 words).'
+      }
+    ];
+
+    const REVIEW_TOPICS_META = {
+      aux_agreement: {
+        title: '1. Subject-Auxiliary Agreement (Blue: have vs. has)',
+        advice: 'Review when to use singular "has" (He, She, It, singular nouns like "team" or "family") vs. plural "have" (I, You, We, They, "classmates").',
+        targetTab: 2,
+        targetLabel: 'Review in Module 2: Lego Builder →'
+      },
+      irregular_participles: {
+        title: '2. Irregular Past Participles (Green: 3rd Column vs. Simple Past Trap)',
+        advice: 'Never use Simple Past forms ("went", "took", "wrote") after have/has. Practice the 3rd-column participles ("been/gone", "taken", "written", "chosen").',
+        targetTab: 1,
+        targetLabel: 'Practice in Module 1: Verb Cards →'
+      },
+      time_markers: {
+        title: '3. Present Perfect Time Markers (ever, yet, since, already)',
+        advice: 'Use "ever" in experience questions ("Have you ever...?"), "yet" at the end of negatives, and "since" before a specific starting date/month.',
+        targetTab: 3,
+        targetLabel: 'Review in Module 3: Guided Practice →'
+      },
+      us_uk_participles: {
+        title: '4. US & UK Dual Past Participles + Auxiliary Pairings',
+        advice: 'In IELTS sentence completion, include BOTH the blue auxiliary ("have") and the green participle ("traveled/travelled", "gotten/got", "learned/learnt").',
+        targetTab: 1,
+        targetLabel: 'Compare US/UK in Module 1 →'
+      },
+      fce_transformations: {
+        title: '5. B1+ Key Word Transformations (EVER, NEVER, SINCE)',
+        advice: 'Practice rewriting sentences in 2–5 words using the exact KEY WORD: "It is the first time + has/have + EVER + participle" and "has/have + NEVER + participle".',
+        targetTab: 2,
+        targetLabel: 'Review Formula in Module 2 →'
+      }
+    };
+
+    /* -------------------------------------------------------------------------
+       6. APPLICATION STATE & INITIALIZATION
+       ------------------------------------------------------------------------- */
+    const state = {
+      activeTab: 0,
+      currentVerbFilter: 'all',
+      flippedCards: new Set(),
+      unlockedCards: new Set(),
+      teacherUnlockedAll: false,
+      spotterSolved: new Set(),
+      guidedSolved: new Set(),
+      trackSpeeds: { us: 1.0, uk: 1.0 },
+      listeningAnswers: {},
+      peerGrid: {
+        1: { status: 'pending' },
+        2: { status: 'pending' },
+        3: { status: 'pending' },
+        4: { status: 'pending' }
+      },
+      pet5Answers: {},
+      examGraded: false,
+      lastExamReport: null
+    };
+
+    let speechVoices = [];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initVoices();
+      renderVerbCards();
+      updateLegoBuilder();
+      renderErrorSpotter();
+      renderGuidedGaps();
+      renderListeningQuestions('us');
+      renderListeningQuestions('uk');
+      renderPeerGrid();
+      renderExamPet5();
+      renderExamIelts();
+      renderExamFce();
+      updateGlobalProgress();
+    });
+
+    /* -------------------------------------------------------------------------
+       7. NAVIGATION & GLOBAL PROGRESS
+       ------------------------------------------------------------------------- */
+    function switchTab(tabIndex) {
+      state.activeTab = tabIndex;
+      for (let i = 0; i <= 4; i++) {
+        const section = document.getElementById(`module-${i}`);
+        const btn = document.getElementById(`tab-btn-${i}`);
+        if (i === tabIndex) {
+          section.classList.remove('hidden');
+          btn.classList.add('active');
+        } else {
+          section.classList.add('hidden');
+          btn.classList.remove('active');
+        }
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function updateGlobalProgress() {
+      // Total milestones = 38:
+      // Unlocked Verb Cards (up to 15) + Spotter (5) + Guided Gaps (6) + Listening Qs (8) + Peer Grid (4) = 38
+      const cardPts = state.unlockedCards.size;
+      const spotterPts = state.spotterSolved.size;
+      const guidedPts = state.guidedSolved.size;
+      const listenPts = Object.keys(state.listeningAnswers).length;
+      const peerPts = Object.values(state.peerGrid).filter(x => x.status !== 'pending').length;
+
+      const totalDone = cardPts + spotterPts + guidedPts + listenPts + peerPts;
+      const maxTasks = 38;
+      const pct = Math.max(4, Math.min(100, Math.round((totalDone / maxTasks) * 100)));
+
+      document.getElementById('global-progress-fill').style.width = `${pct}%`;
+      document.getElementById('global-progress-text').textContent = `Progress: ${totalDone} / ${maxTasks} Tasks`;
+
+      if (cardPts >= 10) document.getElementById('tab-badge-1').classList.remove('hidden');
+      if (spotterPts === 5) document.getElementById('tab-badge-2').classList.remove('hidden');
+      if (guidedPts === 6 && listenPts >= 6) document.getElementById('tab-badge-3').classList.remove('hidden');
+      if (state.examGraded) document.getElementById('tab-badge-4').classList.remove('hidden');
+    }
+
+    let toastTimer = null;
+    function showToast(icon, msg) {
+      const el = document.getElementById('toast-banner');
+      document.getElementById('toast-icon').textContent = icon;
+      document.getElementById('toast-text').textContent = msg;
+      el.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.add('hidden'), 3200);
+    }
+
+    function normalizeInput(str) {
+      return str.trim().toLowerCase().replace(/\s+/g, ' ').replace(/’/g, "'").replace(/[.!?]+$/, '');
+    }
+
+    /* -------------------------------------------------------------------------
+       8. WEB SPEECH API AUDIO ENGINE (US en-US & UK en-GB)
+       ------------------------------------------------------------------------- */
+    function initVoices() {
+      if (!('speechSynthesis' in window)) return;
+      const load = () => {
+        speechVoices = window.speechSynthesis.getVoices() || [];
+      };
+      load();
+      if (typeof window.speechSynthesis.onvoiceschanged !== 'undefined') {
+        window.speechSynthesis.onvoiceschanged = load;
+      }
+    }
+
+    function speakSentence(text, langCode, rate = 1.0, triggerBtn = null) {
+      if (!('speechSynthesis' in window)) {
+        showToast('🔇', 'Speech audio is not supported in this browser.');
+        return;
+      }
+
+      try {
+        window.speechSynthesis.cancel();
+        document.querySelectorAll('.speaking-active').forEach(b => b.classList.remove('speaking-active'));
+
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = langCode;
+        utter.rate = rate;
+
+        // Match US or UK voice if available in browser
+        const matched = speechVoices.find(v => v.lang && v.lang.toLowerCase().replace('_', '-').startsWith(langCode.toLowerCase()));
+        if (matched) utter.voice = matched;
+
+        if (triggerBtn) triggerBtn.classList.add('speaking-active');
+        utter.onend = () => {
+          if (triggerBtn) triggerBtn.classList.remove('speaking-active');
+        };
+        utter.onerror = () => {
+          if (triggerBtn) triggerBtn.classList.remove('speaking-active');
+        };
+
+        window.speechSynthesis.speak(utter);
+      } catch (e) {
+        showToast('🔇', 'Audio playback unavailable in this environment.');
+      }
+    }
+
+    function stopAllSpeech() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      document.querySelectorAll('.speaking-active').forEach(b => b.classList.remove('speaking-active'));
+    }
+
+    /* -------------------------------------------------------------------------
+       9. TAB 1: UNLOCKABLE 3D VERB CARDS (ACTIVE RECALL -> US & UK + AUDIO)
+       ------------------------------------------------------------------------- */
+    function filterVerbCards(cat) {
+      state.currentVerbFilter = cat;
+      document.querySelectorAll('.verb-filter').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'btn btn-primary verb-filter';
+        } else {
+          btn.className = 'btn btn-secondary verb-filter';
+        }
+      });
+      renderVerbCards();
+    }
+
+    function flipCardToBack(id) {
+      state.flippedCards.add(id);
+      const card = document.getElementById(`vcard-${id}`);
+      if (card) {
+        card.classList.add('flipped');
+        const input = document.getElementById(`vinput-${id}`);
+        if (input && !state.unlockedCards.has(id)) {
+          setTimeout(() => input.focus(), 260);
+        }
+      }
+    }
+
+    function flipCardToFront(id) {
+      state.flippedCards.delete(id);
+      const card = document.getElementById(`vcard-${id}`);
+      if (card) card.classList.remove('flipped');
+    }
+
+    function showCardHint(id) {
+      const verb = VERB_CARDS_DATA.find(v => v.id === id);
+      const hintBox = document.getElementById(`vhint-${id}`);
+      if (hintBox && verb) {
+        hintBox.textContent = `💡 Hint: ${verb.hint}`;
+        hintBox.classList.remove('hidden');
+      }
+    }
+
+    function checkAndUnlockCard(id) {
+      const verb = VERB_CARDS_DATA.find(v => v.id === id);
+      const inputEl = document.getElementById(`vinput-${id}`);
+      const fbEl = document.getElementById(`vfb-${id}`);
+      if (!verb || !inputEl || !fbEl) return;
+
+      const typed = normalizeInput(inputEl.value);
+      if (!typed) {
+        fbEl.classList.remove('hidden');
+        fbEl.style.background = '#fef3c7';
+        fbEl.style.color = '#92400e';
+        fbEl.style.border = '1px solid #fcd34d';
+        fbEl.textContent = '✏️ Please type the Past Participle first (or click Hint).';
+        inputEl.focus();
+        return;
+      }
+
+      if (verb.validParticiples.includes(typed)) {
+        state.unlockedCards.add(id);
+        state.flippedCards.add(id);
+        updateUnlockedCounter();
+        renderVerbCards();
+        showToast('🔓', `Unlocked "${verb.base}" → ${verb.usParticiple}!`);
+      } else if (verb.traps.includes(typed)) {
+        fbEl.classList.remove('hidden');
+        fbEl.style.background = '#fee2e2';
+        fbEl.style.color = '#b91c1c';
+        fbEl.style.border = '1.5px solid #dc2626';
+        fbEl.innerHTML = `⚠️ <strong>Simple Past / Spelling Trap!</strong> "<em>${typed}</em>" is NOT the valid 3rd-column Past Participle. Enter the 3rd-column form!`;
+        inputEl.select();
+      } else {
+        fbEl.classList.remove('hidden');
+        fbEl.style.background = '#fee2e2';
+        fbEl.style.color = '#b91c1c';
+        fbEl.style.border = '1.5px solid #dc2626';
+        fbEl.textContent = `❌ Not quite ("${typed}"). Click the Hint button for a clue on the Past Participle of "${verb.base}".`;
+        inputEl.select();
+      }
+    }
+
+    function toggleTeacherUnlockAll() {
+      state.teacherUnlockedAll = !state.teacherUnlockedAll;
+      const btn = document.getElementById('btn-teacher-unlock');
+
+      if (state.teacherUnlockedAll) {
+        VERB_CARDS_DATA.forEach(v => {
+          state.unlockedCards.add(v.id);
+          state.flippedCards.add(v.id);
+        });
+        btn.textContent = '🔒 Lock Cards (Student Mode)';
+        btn.className = 'btn btn-amber';
+        showToast('🔓', 'Teacher Mode: All 15 Verb Cards unlocked & flipped!');
+      } else {
+        state.unlockedCards.clear();
+        state.flippedCards.clear();
+        btn.textContent = '🔓 Teacher Unlock All';
+        btn.className = 'btn btn-dark';
+        showToast('🔒', 'Student Mode: All 15 Verb Cards reset to Active Recall.');
+      }
+
+      updateUnlockedCounter();
+      renderVerbCards();
+    }
+
+    function updateUnlockedCounter() {
+      document.getElementById('unlocked-cards-count').textContent = state.unlockedCards.size;
+      updateGlobalProgress();
+    }
+
+    function playVerbCardAudio(id, accent, btn) {
+      const verb = VERB_CARDS_DATA.find(v => v.id === id);
+      if (!verb) return;
+      const text = accent === 'en-US' ? verb.usSpeech : verb.ukSpeech;
+      speakSentence(text, accent, 0.96, btn);
+    }
+
+    function renderVerbCards() {
+      const grid = document.getElementById('verb-cards-grid');
+      const filtered = VERB_CARDS_DATA.filter(v => state.currentVerbFilter === 'all' || v.category === state.currentVerbFilter);
+
+      grid.innerHTML = filtered.map(v => {
+        const isUnlocked = state.unlockedCards.has(v.id);
+        const isFlipped = state.flippedCards.has(v.id);
+
+        let badgeStyle = 'background:#ccfbf1;color:#115e59;';
+        if (v.category === 'irregular') badgeStyle = 'background:#f3e8ff;color:#6b21a8;';
+        if (v.category === 'dual') badgeStyle = 'background:#e0e7ff;color:#3730a3;';
+
+        const frontStatusBadge = isUnlocked
+          ? `<span style="font-size:0.68rem;font-weight:800;padding:0.2rem 0.55rem;border-radius:999px;background:#dcfce7;color:#15803d;border:1px solid #86efac;">🔓 Unlocked</span>`
+          : `<span style="font-size:0.68rem;font-weight:800;padding:0.2rem 0.55rem;border-radius:999px;background:#f1f5f9;color:#475569;">🔒 Locked</span>`;
+
+        // BACK CONTENT: Either Locked Active Recall OR Unlocked Full US & UK + Audio
+        let backHtml = '';
+        if (!isUnlocked) {
+          backHtml = `
+            <div class="flex-between" style="border-bottom:1px solid var(--border-light);padding-bottom:0.5rem;">
+              <span style="font-size:0.72rem;font-weight:800;color:#1d4ed8;">🔒 Active Recall: <strong>${v.base}</strong></span>
+              <button onclick="flipCardToFront('${v.id}')" class="btn btn-secondary btn-sm" style="padding:0.25rem 0.55rem;">&larr; Front</button>
+            </div>
+
+            <div style="my-auto;display:flex;flex-direction:column;gap:0.65rem;margin:auto 0;">
+              <div style="text-align:center;">
+                <span style="font-size:1.75rem;" aria-hidden="true">${v.emoji}</span>
+                <h4 style="font-size:1rem;font-weight:800;color:#0f172a;margin-top:0.2rem;">
+                  What is the <span style="color:#15803d;">Past Participle</span> of "${v.base}"?
+                </h4>
+                <p style="font-size:0.75rem;color:#64748b;margin-top:0.2rem;">
+                  Both 🇺🇸 US and 🇬🇧 UK spellings unlock this card!
+                </p>
+              </div>
+
+              <input type="text" id="vinput-${v.id}" placeholder="Type the Past Participle..." autocomplete="off"
+                onkeydown="if(event.key==='Enter'){ event.preventDefault(); checkAndUnlockCard('${v.id}'); }"
+                class="participle-input" />
+
+              <div style="display:flex;gap:0.45rem;">
+                <button onclick="checkAndUnlockCard('${v.id}')" class="btn btn-success" style="flex:1;">
+                  ✓ Check &amp; Unlock
+                </button>
+                <button onclick="showCardHint('${v.id}')" class="btn btn-amber">
+                  💡 Hint
+                </button>
+              </div>
+
+              <div id="vhint-${v.id}" class="hidden" style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;border-radius:0.65rem;padding:0.5rem 0.65rem;font-size:0.75rem;font-weight:600;"></div>
+              <div id="vfb-${v.id}" class="hidden" style="border-radius:0.65rem;padding:0.55rem 0.65rem;font-size:0.75rem;font-weight:600;line-height:1.4;"></div>
+            </div>
+
+            <div style="text-align:center;font-size:0.7rem;color:#64748b;border-top:1px solid var(--border-light);padding-top:0.45rem;">
+              Complete the Past Participle to unlock US &amp; UK Audio
+            </div>
+          `;
+        } else {
+          backHtml = `
+            <div class="flex-between" style="border-bottom:1px solid var(--border-light);padding-bottom:0.45rem;">
+              <span style="font-size:0.7rem;font-weight:800;padding:0.2rem 0.55rem;border-radius:999px;background:#dcfce7;color:#15803d;border:1px solid #86efac;">
+                🎉 Unlocked! (${v.base})
+              </span>
+              <button onclick="flipCardToFront('${v.id}')" class="btn btn-secondary btn-sm" style="padding:0.22rem 0.5rem;">&larr; Front</button>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:0.5rem;margin:0.45rem 0;">
+              <!-- US Section -->
+              <div class="variant-panel variant-us">
+                <div class="flex-between">
+                  <span style="font-size:0.72rem;font-weight:800;color:#1d4ed8;">
+                    🇺🇸 US: <span class="token-green">${v.usParticiple}</span>
+                  </span>
+                  <button onclick="playVerbCardAudio('${v.id}', 'en-US', this)" class="btn btn-primary btn-sm" style="padding:0.22rem 0.55rem;">
+                    🇺🇸 Audio (US)
+                  </button>
+                </div>
+                <p style="font-size:0.77rem;font-weight:600;color:#1e293b;">${v.usSentenceHtml}</p>
+              </div>
+
+              <!-- UK Section -->
+              <div class="variant-panel variant-uk">
+                <div class="flex-between">
+                  <span style="font-size:0.72rem;font-weight:800;color:#3730a3;">
+                    🇬🇧 UK: <span class="token-green">${v.ukParticiple}</span>
+                  </span>
+                  <button onclick="playVerbCardAudio('${v.id}', 'en-GB', this)" class="btn btn-indigo btn-sm" style="padding:0.22rem 0.55rem;">
+                    🇬🇧 Audio (UK)
+                  </button>
+                </div>
+                <p style="font-size:0.77rem;font-weight:600;color:#1e293b;">${v.ukSentenceHtml}</p>
+              </div>
+
+              <!-- Trap & Grammar Note -->
+              <div class="trap-panel">
+                <strong>⚠️ ${v.trapDisplay}</strong><br/>
+                <span style="color:#334155;">${v.grammarNote}</span>
+              </div>
+            </div>
+          `;
+        }
+
+        return `
+          <div id="vcard-${v.id}" class="flip-card ${isFlipped ? 'flipped' : ''} ${isUnlocked ? 'unlocked' : ''}">
+            <div class="flip-card-inner">
+              <!-- FRONT OF CARD -->
+              <div class="flip-card-front">
+                <div class="flex-between">
+                  <span style="font-size:0.68rem;font-weight:800;padding:0.22rem 0.55rem;border-radius:0.5rem;${badgeStyle}">${v.catLabel}</span>
+                  ${frontStatusBadge}
+                </div>
+
+                <div style="text-align:center;margin:auto 0;padding:0.75rem 0;">
+                  <div style="font-size:2.6rem;margin-bottom:0.35rem;" aria-hidden="true">${v.emoji}</div>
+                  <span style="font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;">Base Verb</span>
+                  <h3 style="font-size:1.85rem;font-weight:800;color:#0f172a;margin-top:0.15rem;">${v.base}</h3>
+                  <p style="font-size:0.8rem;color:#475569;margin-top:0.5rem;background:#f8fafc;padding:0.5rem 0.65rem;border-radius:0.65rem;border:1px solid #e2e8f0;">
+                    ${v.meaning}
+                  </p>
+                </div>
+
+                <button onclick="flipCardToBack('${v.id}')" class="btn ${isUnlocked ? 'btn-success' : 'btn-primary'}" style="width:100%;">
+                  ${isUnlocked ? 'View US/UK & Audio &rarr;' : 'Flip to Complete Participle &rarr;'}
+                </button>
+              </div>
+
+              <!-- BACK OF CARD -->
+              <div class="flip-card-back">
+                ${backHtml}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    /* -------------------------------------------------------------------------
+       10. TAB 2: LEGO SENTENCE BUILDER + US/UK AUDIO & ERROR SPOTTER
+       ------------------------------------------------------------------------- */
+    function isSingularThird(subj) {
+      return ['She', 'He', 'My sister'].includes(subj);
+    }
+
+    function updateLegoBuilder() {
+      const subj = document.getElementById('lego-subj').value;
+      const aux = document.getElementById('lego-aux').value;
+      const [partUS, partUK] = document.getElementById('lego-part').value.split('|');
+      const [compUS, compUK] = document.getElementById('lego-comp').value.split('|');
+
+      const needsHas = isSingularThird(subj);
+      const auxIsHas = (aux === 'has' || aux === "hasn't");
+
+      const stage = document.getElementById('lego-stage');
+      const msg = document.getElementById('lego-status-msg');
+      const fixBtn = document.getElementById('btn-lego-fix');
+
+      if (needsHas && !auxIsHas) {
+        stage.classList.add('invalid');
+        msg.style.color = '#b91c1c';
+        msg.textContent = `❌ Grammar Check: "${subj}" is singular and requires HAS or HASN'T (not "${aux}").`;
+        fixBtn.classList.remove('hidden');
+      } else if (!needsHas && auxIsHas) {
+        stage.classList.add('invalid');
+        msg.style.color = '#b91c1c';
+        msg.textContent = `❌ Grammar Check: "${subj}" requires HAVE or HAVEN'T (not "${aux}").`;
+        fixBtn.classList.remove('hidden');
+      } else {
+        stage.classList.remove('invalid');
+        msg.style.color = '#15803d';
+        msg.textContent = `✅ Valid Subject-Auxiliary Agreement! (${subj} + ${aux})`;
+        fixBtn.classList.add('hidden');
+      }
+
+      const partLabel = partUS === partUK ? partUS : `${partUS} (US) / ${partUK} (UK)`;
+      const compLabel = compUS === compUK ? compUS : `${compUS} (US) / ${compUK} (UK)`;
+
+      document.getElementById('lego-visual-row').innerHTML = `
+        <span class="lego-piece" style="background:#0f172a;color:#ffffff;">${subj}</span>
+        <span style="font-weight:800;color:#64748b;">+</span>
+        <span class="lego-piece" style="background:#1d4ed8;color:#ffffff;">${aux}</span>
+        <span style="font-weight:800;color:#64748b;">+</span>
+        <span class="lego-piece" style="background:#15803d;color:#ffffff;">${partLabel}</span>
+        <span style="font-weight:800;color:#64748b;">+</span>
+        <span class="lego-piece" style="background:#ffffff;color:#0f172a;border:1px solid #cbd5e1;">${compLabel}.</span>
+      `;
+
+      document.getElementById('lego-us-sentence').innerHTML =
+        `${subj} <span class="token-blue">${aux}</span> <span class="token-green">${partUS}</span> ${compUS}.`;
+      document.getElementById('lego-uk-sentence').innerHTML =
+        `${subj} <span class="token-blue">${aux}</span> <span class="token-green">${partUK}</span> ${compUK}.`;
+    }
+
+    function autoFixLego() {
+      const subj = document.getElementById('lego-subj').value;
+      const auxEl = document.getElementById('lego-aux');
+      const needsHas = isSingularThird(subj);
+      const isNeg = auxEl.value.includes("n't");
+      auxEl.value = needsHas ? (isNeg ? "hasn't" : 'has') : (isNeg ? "haven't" : 'have');
+      updateLegoBuilder();
+    }
+
+    function speakLego(accent, btn) {
+      const subj = document.getElementById('lego-subj').value;
+      const aux = document.getElementById('lego-aux').value;
+      const [partUS, partUK] = document.getElementById('lego-part').value.split('|');
+      const [compUS, compUK] = document.getElementById('lego-comp').value.split('|');
+
+      const sentence = accent === 'en-US'
+        ? `${subj} ${aux} ${partUS} ${compUS}.`
+        : `${subj} ${aux} ${partUK} ${compUK}.`;
+
+      speakSentence(sentence, accent, 0.95, btn);
+    }
+
+    /* Error Spotter Drill */
+    function renderErrorSpotter() {
+      const list = document.getElementById('spotter-list');
+      list.innerHTML = ERROR_SPOTTER_DATA.map(item => {
+        const solved = state.spotterSolved.has(item.id);
+        const wordsHtml = item.tokens.map((tok, idx) => {
+          if (solved && idx === item.wrongIndex) {
+            return `<span style="padding:0.35rem 0.7rem;border-radius:0.6rem;background:#15803d;color:#ffffff;font-weight:800;font-size:0.9rem;">✓ ${item.correction}</span>`;
+          }
+          if (!tok.clickable) {
+            return `<span style="font-weight:700;font-size:0.9rem;color:#334155;">${tok.text}</span>`;
+          }
+          return `<button onclick="checkSpotterWord(${item.id}, ${idx}, this)" class="word-btn">${tok.text}</button>`;
+        }).join(' ');
+
+        const rightBadge = solved
+          ? `<span class="legend-pill pill-green" style="margin-left:auto;">✓ Solved</span>`
+          : `<button onclick="checkSpotterNoError(${item.id}, this)" class="btn btn-secondary btn-sm" style="margin-left:auto;">✓ No Error</button>`;
+
+        return `
+          <div class="spotter-row ${solved ? 'solved' : ''}">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.45rem;">
+              <span style="font-size:0.75rem;font-weight:800;color:#64748b;">#${item.id}</span>
+              ${wordsHtml}
+              ${rightBadge}
+            </div>
+            <div id="spotter-fb-${item.id}" class="${solved ? '' : 'hidden'}" style="margin-top:0.6rem;font-size:0.82rem;font-weight:700;color:${solved ? '#15803d' : '#b91c1c'};">
+              ${solved ? item.explanation : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('spotter-count').textContent = state.spotterSolved.size;
+      updateGlobalProgress();
+    }
+
+    function checkSpotterWord(itemId, idx, btn) {
+      if (state.spotterSolved.has(itemId)) return;
+      const item = ERROR_SPOTTER_DATA.find(x => x.id === itemId);
+      const fb = document.getElementById(`spotter-fb-${itemId}`);
+
+      if (idx === item.wrongIndex) {
+        state.spotterSolved.add(itemId);
+        renderErrorSpotter();
+      } else {
+        btn.classList.add('wrong-flash');
+        setTimeout(() => btn.classList.remove('wrong-flash'), 750);
+        fb.classList.remove('hidden');
+        fb.style.color = '#b91c1c';
+        fb.textContent = item.wrongIndex === -1
+          ? `⚠️ "${item.tokens[idx].text}" is correct! Check if this sentence has any error at all.`
+          : `⚠️ "${item.tokens[idx].text}" is correct. Look for a wrong blue auxiliary or a red Simple Past trap.`;
+      }
+    }
+
+    function checkSpotterNoError(itemId, btn) {
+      if (state.spotterSolved.has(itemId)) return;
+      const item = ERROR_SPOTTER_DATA.find(x => x.id === itemId);
+      const fb = document.getElementById(`spotter-fb-${itemId}`);
+
+      if (item.wrongIndex === -1) {
+        state.spotterSolved.add(itemId);
+        renderErrorSpotter();
+      } else {
+        btn.classList.add('wrong-flash');
+        setTimeout(() => btn.classList.remove('wrong-flash'), 750);
+        fb.classList.remove('hidden');
+        fb.style.color = '#b91c1c';
+        fb.textContent = '⚠️ This sentence DOES have an error! Check the auxiliary verb and past participle.';
+      }
+    }
+
+    /* -------------------------------------------------------------------------
+       11. TAB 3: GUIDED PRACTICE, LISTENING TRACKS & PEER GRID
+       ------------------------------------------------------------------------- */
+    function renderGuidedGaps() {
+      const list = document.getElementById('guided-gaps-list');
+      list.innerHTML = GUIDED_GAPS_DATA.map(item => `
+        <div style="background:var(--bg-page);border:1px solid var(--border-light);border-radius:0.9rem;padding:0.95rem;">
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.45rem;font-size:0.92rem;font-weight:600;">
+            <span style="font-size:0.75rem;font-weight:800;color:#64748b;">#${item.id}</span>
+            <span>${item.before}</span>
+            <input type="text" id="gg-aux-${item.id}" placeholder="🔵 ${item.auxHint}" autocomplete="off" class="gap-input-blue" />
+            <input type="text" id="gg-part-${item.id}" placeholder="🟢 (${item.partHint})" autocomplete="off" class="gap-input-green" />
+            <span>${item.after}</span>
+            <button onclick="checkSingleGuidedGap(${item.id})" class="btn btn-dark btn-sm" style="margin-left:auto;">Check</button>
+          </div>
+          <div id="gg-fb-${item.id}" class="hidden" style="margin-top:0.55rem;padding:0.5rem 0.75rem;border-radius:0.65rem;font-size:0.8rem;font-weight:700;"></div>
+        </div>
+      `).join('');
+    }
+
+    function checkSingleGuidedGap(id) {
+      const item = GUIDED_GAPS_DATA.find(x => x.id === id);
+      const auxVal = normalizeInput(document.getElementById(`gg-aux-${id}`).value);
+      const partVal = normalizeInput(document.getElementById(`gg-part-${id}`).value);
+      const fb = document.getElementById(`gg-fb-${id}`);
+
+      const auxOk = item.validAux.includes(auxVal);
+      const partOk = item.validPart.includes(partVal);
+
+      fb.classList.remove('hidden');
+      if (auxOk && partOk) {
+        state.guidedSolved.add(id);
+        fb.style.background = '#dcfce7';
+        fb.style.color = '#15803d';
+        fb.style.border = '1px solid #86efac';
+        fb.textContent = `✅ Correct! ${item.explanation}`;
+      } else {
+        state.guidedSolved.delete(id);
+        fb.style.background = '#fee2e2';
+        fb.style.color = '#b91c1c';
+        fb.style.border = '1px solid #fca5a5';
+        let hints = [];
+        if (!auxOk) hints.push(`🔵 Blue box: check subject-auxiliary agreement (${item.validAux[0]})`);
+        if (!partOk) {
+          hints.push(item.traps.includes(partVal)
+            ? `⚠️ Red Trap: "${partVal}" is Simple Past—use the Green past participle of "${item.partHint}"`
+            : `🟢 Green box: enter the past participle of "${item.partHint}"`);
+        }
+        fb.textContent = hints.join(' | ');
+      }
+      updateGlobalProgress();
+    }
+
+    function checkAllGuidedGaps() {
+      GUIDED_GAPS_DATA.forEach(item => checkSingleGuidedGap(item.id));
+    }
+
+    /* Listening Tracks (US & UK) */
+    function setTrackSpeed(trackKey, rate) {
+      state.trackSpeeds[trackKey] = rate;
+      document.getElementById(`speed-${trackKey}-1`).classList.toggle('active', rate === 1.0);
+      document.getElementById(`speed-${trackKey}-08`).classList.toggle('active', rate === 0.8);
+      showToast('🎚️', `${trackKey.toUpperCase()} Track speed: ${rate === 1.0 ? '1.0x Normal' : '0.8x Clear Slow'}`);
+    }
+
+    function playListeningTrack(trackKey, btn) {
+      const track = LISTENING_DATA[trackKey];
+      speakSentence(track.script, track.lang, state.trackSpeeds[trackKey], btn);
+    }
+
+    function toggleTrackTranscript(trackKey) {
+      const box = document.getElementById(`trans-box-${trackKey}`);
+      const btn = document.getElementById(`btn-trans-${trackKey}`);
+      const isHidden = box.classList.contains('hidden');
+      box.classList.toggle('hidden');
+      btn.textContent = isHidden ? '📜 Hide Transcript' : '📜 Show Transcript';
+    }
+
+    function renderListeningQuestions(trackKey) {
+      const container = document.getElementById(`track-${trackKey}-questions`);
+      const questions = LISTENING_DATA[trackKey].questions;
+
+      container.innerHTML = questions.map(q => {
+        const opts = q.options.map((opt, idx) => `
+          <button onclick="selectListeningOption('${trackKey}', '${q.id}', ${idx})" id="lopt-${q.id}-${idx}" class="mc-option-btn">
+            ${opt}
+          </button>
+        `).join('');
+
+        return `
+          <div style="background:#ffffff;border:1px solid var(--border-light);border-radius:0.75rem;padding:0.75rem;display:flex;flex-direction:column;gap:0.4rem;">
+            <p style="font-size:0.82rem;font-weight:800;color:#0f172a;">${q.q}</p>
+            <div style="display:flex;flex-direction:column;gap:0.35rem;">
+              ${opts}
+            </div>
+            <div id="lfb-${q.id}" class="hidden" style="margin-top:0.35rem;padding:0.45rem 0.65rem;border-radius:0.55rem;font-size:0.76rem;font-weight:700;"></div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function selectListeningOption(trackKey, qId, idx) {
+      const question = LISTENING_DATA[trackKey].questions.find(q => q.id === qId);
+      if (!question) return;
+
+      state.listeningAnswers[qId] = idx;
+
+      question.options.forEach((_, i) => {
+        const btn = document.getElementById(`lopt-${qId}-${i}`);
+        if (!btn) return;
+        btn.classList.remove('selected', 'correct', 'incorrect');
+        if (i === question.correct) {
+          btn.classList.add('correct');
+        } else if (i === idx) {
+          btn.classList.add('incorrect');
+        }
+      });
+
+      const fb = document.getElementById(`lfb-${qId}`);
+      if (fb) {
+        const isCorrect = idx === question.correct;
+        fb.classList.remove('hidden');
+        fb.style.background = isCorrect ? '#dcfce7' : '#fee2e2';
+        fb.style.color = isCorrect ? '#15803d' : '#b91c1c';
+        fb.style.border = isCorrect ? '1px solid #86efac' : '1px solid #fca5a5';
+        fb.textContent = `${isCorrect ? '✅ Correct!' : '❌ Not quite.'} ${question.exp}`;
+      }
+
+      updateGlobalProgress();
+    }
+
+    /* Solo Self-Paced Personal Experience Grid */
+    function renderPeerGrid() {
+      const container = document.getElementById('peer-grid-container');
+      container.innerHTML = PEER_GRID_DATA.map(item => {
+        const cell = state.peerGrid[item.id];
+        const isYes = cell.status === 'yes';
+        const isNo = cell.status === 'no';
+
+        let generatedSentenceHtml = '';
+        if (isYes || isNo) {
+          const usHtml = isYes ? item.usYes : item.usNo;
+          const ukHtml = isYes ? item.ukYes : item.ukNo;
+          generatedSentenceHtml = `
+            <div style="background:#ffffff;border:1px solid #cbd5e1;border-radius:0.75rem;padding:0.7rem;display:flex;flex-direction:column;gap:0.45rem;">
+              <div class="flex-between">
+                <span style="font-size:0.7rem;font-weight:800;color:#15803d;text-transform:uppercase;">
+                  ✓ Verified Personal Sentence (${isYes ? 'Affirmative' : 'Negative'})
+                </span>
+                <div style="display:flex;gap:0.35rem;">
+                  <button onclick="speakSelfExperience(${item.id}, 'en-US', this)" class="btn btn-primary btn-sm" style="padding:0.2rem 0.5rem;">🇺🇸 US</button>
+                  <button onclick="speakSelfExperience(${item.id}, 'en-GB', this)" class="btn btn-indigo btn-sm" style="padding:0.2rem 0.5rem;">🇬🇧 UK</button>
+                </div>
+              </div>
+              <p style="font-size:0.82rem;font-weight:700;color:#0f172a;">🇺🇸 ${usHtml}</p>
+              <p style="font-size:0.82rem;font-weight:700;color:#0f172a;">🇬🇧 ${ukHtml}</p>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="peer-tile ${isYes ? 'yes' : (isNo ? 'no' : '')}" style="cursor:default;">
+            <div style="display:flex;align-items:center;gap:0.65rem;">
+              <span style="font-size:1.65rem;" aria-hidden="true">${item.emoji}</span>
+              <div>
+                <span style="font-size:0.68rem;font-weight:800;color:#1d4ed8;text-transform:uppercase;">Have you ever...</span>
+                <h4 style="font-size:0.9rem;font-weight:800;">${item.text}?</h4>
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
+              <button onclick="setSelfExperience(${item.id}, 'yes')" class="btn ${isYes ? 'btn-success' : 'btn-secondary'} btn-sm">
+                Yes, I have ✓
+              </button>
+              <button onclick="setSelfExperience(${item.id}, 'no')" class="btn ${isNo ? 'btn-amber' : 'btn-secondary'} btn-sm">
+                No, I haven't ✗
+              </button>
+            </div>
+
+            ${generatedSentenceHtml}
+          </div>
+        `;
+      }).join('');
+
+      const allDone = Object.values(state.peerGrid).every(c => c.status !== 'pending');
+      document.getElementById('peer-complete-banner').classList.toggle('hidden', !allDone);
+      updateGlobalProgress();
+    }
+
+    function setSelfExperience(id, choice) {
+      state.peerGrid[id].status = choice;
+      renderPeerGrid();
+    }
+
+    function speakSelfExperience(id, accent, btn) {
+      const item = PEER_GRID_DATA.find(x => x.id === id);
+      const cell = state.peerGrid[id];
+      if (!item || !cell || cell.status === 'pending') return;
+
+      const text = cell.status === 'yes'
+        ? (accent === 'en-US' ? item.speechYesUS : item.speechYesUK)
+        : (accent === 'en-US' ? item.speechNoUS : item.speechNoUK);
+
+      speakSentence(text, accent, 0.95, btn);
+    }
+
+    function resetPeerGrid() {
+      [1, 2, 3, 4].forEach(id => state.peerGrid[id] = { status: 'pending' });
+      renderPeerGrid();
+    }
+
+    /* -------------------------------------------------------------------------
+       12. TAB 4: B1 EXAM QUIZ (16 ITEMS: PET 5 + PET 6 + IELTS + FCE)
+       ------------------------------------------------------------------------- */
+    function toggleExamGuide() {
+      const box = document.getElementById('exam-rules-drawer');
+      const btn = document.getElementById('btn-exam-guide');
+      const isHidden = box.classList.contains('hidden');
+      box.classList.toggle('hidden');
+      btn.textContent = isHidden ? '💡 Hide Exam Rules' : '💡 Show Exam Rules';
+    }
+
+    function renderExamPet5() {
+      const grid = document.getElementById('pet5-questions-grid');
+      grid.innerHTML = EXAM_PET5_DATA.map(item => {
+        const sel = state.pet5Answers[item.num];
+        const optsHtml = item.options.map((opt, idx) => `
+          <button onclick="selectPet5(${item.num}, ${idx})" class="mc-option-btn ${sel === idx ? 'selected' : ''}">
+            ${opt}
+          </button>
+        `).join('');
+
+        return `
+          <div style="background:var(--bg-page);border:1px solid var(--border-light);border-radius:0.9rem;padding:0.9rem;display:flex;flex-direction:column;gap:0.45rem;">
+            <span style="font-size:0.74rem;font-weight:800;color:#1d4ed8;text-transform:uppercase;">Item (${item.num})</span>
+            ${optsHtml}
+          </div>
+        `;
+      }).join('');
+    }
+
+    function selectPet5(num, idx) {
+      state.pet5Answers[num] = idx;
+      const item = EXAM_PET5_DATA.find(x => x.num === num);
+      const cleanWord = item.options[idx].replace(/^[A-D]\)\s*/, '');
+      const slot = document.getElementById(`pet5-slot-${num}`);
+      if (slot) slot.textContent = `(${num}) ${cleanWord}`;
+      renderExamPet5();
+    }
+
+    function renderExamIelts() {
+      const list = document.getElementById('ielts-items-list');
+      list.innerHTML = EXAM_IELTS_DATA.map(item => `
+        <div style="background:var(--bg-page);border:1px solid var(--border-light);border-radius:0.85rem;padding:0.85rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.45rem;font-size:0.92rem;font-weight:700;">
+          <span style="font-size:0.76rem;font-weight:800;color:#6b21a8;">(${item.num})</span>
+          <span>${item.prefix}</span>
+          <input type="text" id="ielts-input-${item.num}" placeholder="Max. 2 words" autocomplete="off" class="exam-ielts-input" />
+          <span>${item.suffix}</span>
+        </div>
+      `).join('');
+    }
+
+    function renderExamFce() {
+      const list = document.getElementById('fce-items-list');
+      list.innerHTML = EXAM_FCE_DATA.map(item => `
+        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:0.9rem;padding:0.95rem;display:flex;flex-direction:column;gap:0.55rem;">
+          <div class="flex-between">
+            <span style="font-size:0.75rem;font-weight:800;color:#92400e;">Item (${item.num}) &bull; Key Word Transformation</span>
+            <span style="background:#0f172a;color:#fcd34d;font-size:0.72rem;font-weight:800;padding:0.25rem 0.65rem;border-radius:0.5rem;letter-spacing:0.05em;">
+              KEY WORD: ${item.keyWord}
+            </span>
+          </div>
+          <p style="font-size:0.84rem;font-weight:600;color:#334155;">
+            <strong>1st Sentence:</strong> ${item.firstSentence}
+          </p>
+          <div style="background:#ffffff;border:1px solid #fde68a;border-radius:0.7rem;padding:0.65rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.45rem;font-size:0.92rem;font-weight:700;">
+            <span>${item.secondBefore}</span>
+            <input type="text" id="fce-input-${item.num}" placeholder="2–5 words (use ${item.keyWord})" autocomplete="off" class="exam-fce-input" />
+            <span>${item.secondAfter}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function gradeB1Exam() {
+      let pet5Pts = 0;
+      let pet6Pts = 0;
+      let ieltsPts = 0;
+      let fcePts = 0;
+      const reviewItems = [];
+
+      // Part 1: PET Reading Part 5 (1-5 -> 2 pts each = 10 pts)
+      EXAM_PET5_DATA.forEach(item => {
+        const chosen = state.pet5Answers[item.num];
+        const ok = chosen === item.correctIdx;
+        const earned = ok ? item.pts : 0;
+        pet5Pts += earned;
+        reviewItems.push({
+          num: item.num,
+          part: 'PET Part 5 (B1)',
+          topicKey: item.topicKey,
+          pts: item.pts,
+          earned,
+          ok,
+          userAns: chosen !== undefined ? item.options[chosen].replace(/^[A-D]\)\s*/, '') : '(Unanswered)',
+          correctAns: item.displayAns,
+          exp: item.exp
+        });
+      });
+
+      // Part 2: PET Reading Part 6 (6-9 -> 3 pts each = 12 pts)
+      [6, 7, 8, 9].forEach(num => {
+        const raw = document.getElementById(`pet6-input-${num}`).value;
+        const norm = normalizeInput(raw);
+        const wordCount = norm ? norm.split(' ').length : 0;
+        const info = EXAM_PET6_DATA[num];
+        const ok = wordCount === 1 && info.valid.includes(norm);
+        const earned = ok ? info.pts : 0;
+        pet6Pts += earned;
+        reviewItems.push({
+          num,
+          part: 'PET Part 6 (B1)',
+          topicKey: info.topicKey,
+          pts: info.pts,
+          earned,
+          ok,
+          userAns: raw.trim() || '(Blank)',
+          correctAns: info.valid[0],
+          exp: info.exp + (wordCount > 1 ? ' (Remember: ONE WORD ONLY).' : '')
+        });
+      });
+
+      // Part 3: IELTS Completion (10-13 -> 4 pts each = 16 pts)
+      EXAM_IELTS_DATA.forEach(item => {
+        const raw = document.getElementById(`ielts-input-${item.num}`).value;
+        const norm = normalizeInput(raw);
+        const wordCount = norm ? norm.split(' ').length : 0;
+        const ok = wordCount >= 1 && wordCount <= 2 && item.valid.includes(norm);
+        const earned = ok ? item.pts : 0;
+        ieltsPts += earned;
+        reviewItems.push({
+          num: item.num,
+          part: 'IELTS Completion',
+          topicKey: item.topicKey,
+          pts: item.pts,
+          earned,
+          ok,
+          userAns: raw.trim() || '(Blank)',
+          correctAns: item.displayAns,
+          exp: item.exp + (wordCount > 2 ? ' (Exceeded NO MORE THAN TWO WORDS limit).' : '')
+        });
+      });
+
+      // Part 4: FCE Key Word Transformations (14-16 -> 4 pts each = 12 pts)
+      EXAM_FCE_DATA.forEach(item => {
+        const raw = document.getElementById(`fce-input-${item.num}`).value;
+        const norm = normalizeInput(raw);
+        const wordCount = norm ? norm.split(' ').length : 0;
+        const hasKey = norm.includes(item.keyWord.toLowerCase());
+        const ok = wordCount >= 2 && wordCount <= 5 && hasKey && item.valid.includes(norm);
+        const earned = ok ? item.pts : 0;
+        fcePts += earned;
+        let extraNote = '';
+        if (raw.trim() && !hasKey) extraNote = ` (Must include the key word "${item.keyWord}").`;
+        else if (wordCount > 5) extraNote = ' (Exceeded the 2–5 words limit).';
+
+        reviewItems.push({
+          num: item.num,
+          part: 'FCE Part 4 (B1+ Bridge)',
+          topicKey: item.topicKey,
+          pts: item.pts,
+          earned,
+          ok,
+          userAns: raw.trim() || '(Blank)',
+          correctAns: item.displayAns,
+          exp: item.exp + extraNote
+        });
+      });
+
+      const petTotalPts = pet5Pts + pet6Pts; // out of 22
+      const totalPts = petTotalPts + ieltsPts + fcePts; // out of 50
+      const pct = Math.round((totalPts / 50) * 100);
+
+      // Group missed items by topic to generate targeted feedback on what to review
+      const missedByTopic = {};
+      reviewItems.filter(r => !r.ok).forEach(r => {
+        if (!missedByTopic[r.topicKey]) missedByTopic[r.topicKey] = [];
+        missedByTopic[r.topicKey].push(`#${r.num}`);
+      });
+
+      const reviewFeedbackList = Object.entries(missedByTopic).map(([key, itemNums]) => {
+        const meta = REVIEW_TOPICS_META[key];
+        return {
+          key,
+          title: meta.title,
+          advice: meta.advice,
+          targetTab: meta.targetTab,
+          targetLabel: meta.targetLabel,
+          missedItems: itemNums.join(', ')
+        };
+      });
+
+      const studentNameRaw = (document.getElementById('student-name-input')?.value || '').trim();
+      const studentGroupRaw = (document.getElementById('student-group-input')?.value || '').trim();
+      const studentName = studentNameRaw || 'Unnamed Student';
+      const studentGroup = studentGroupRaw || '7th Grade';
+      const timestamp = new Date().toLocaleString();
+      const verificationCode = `PP-${totalPts}X50-${(studentName.length * 17 + totalPts * 13 + petTotalPts * 7).toString(16).toUpperCase()}`;
+
+      state.examGraded = true;
+      updateGlobalProgress();
+
+      document.getElementById('diag-total-score').textContent = `${totalPts} / 50 pts`;
+      document.getElementById('diag-total-pct').textContent = `${pct}%`;
+      document.getElementById('diag-student-meta').textContent = `Student: ${studentName} | Group: ${studentGroup} | Date: ${timestamp} | Code: ${verificationCode}`;
+      document.getElementById('diag-pet-score').textContent = `${petTotalPts} / 22 pts`;
+      document.getElementById('diag-ielts-score').textContent = `${ieltsPts} / 16 pts`;
+      document.getElementById('diag-fce-score').textContent = `${fcePts} / 12 pts`;
+
+      const badge = document.getElementById('cefr-result-badge');
+      const summary = document.getElementById('diag-summary-msg');
+      let cefrLabel = '';
+
+      if (totalPts >= 40) {
+        badge.className = 'section-eyebrow eyebrow-green';
+        cefrLabel = 'CEFR Level: B1+ / B2 Bridge Ready (40–50 pts • Distinction)';
+        badge.textContent = `🏆 ${cefrLabel}`;
+        summary.textContent = `Excellent score (${totalPts}/50)! You mastered Present Perfect auxiliaries, US/UK past participles, IELTS sentence completion, and FCE transformations.`;
+      } else if (totalPts >= 30) {
+        badge.className = 'section-eyebrow eyebrow-blue';
+        cefrLabel = 'CEFR Level: B1 Threshold Achieved (30–39 pts • Approved)';
+        badge.textContent = `📈 ${cefrLabel}`;
+        summary.textContent = `Good B1 performance (${totalPts}/50)! Check the review plan below to strengthen the topics where you lost points.`;
+      } else {
+        badge.className = 'section-eyebrow eyebrow-red';
+        cefrLabel = 'CEFR Level: A2 Building (Below 30/50 pts • Targeted Review Needed)';
+        badge.textContent = `🌱 ${cefrLabel}`;
+        summary.textContent = `You scored ${totalPts}/50. Follow the personalized review plan below to reinforce the core rules and retake the quiz.`;
+      }
+
+      // Render Personalized Review Feedback Box
+      const studyPlanEl = document.getElementById('diag-study-plan');
+      if (reviewFeedbackList.length === 0) {
+        studyPlanEl.classList.add('all-mastered');
+        studyPlanEl.innerHTML = `
+          <div class="flex-between">
+            <div>
+              <span class="section-eyebrow eyebrow-green" style="margin-bottom:0.2rem;">🌟 50 / 50 Perfect Mastery</span>
+              <h4 style="font-size:1.05rem;font-weight:800;color:#15803d;">No Remedial Review Needed — All 5 Grammar Areas Mastered!</h4>
+              <p style="font-size:0.84rem;color:#334155;margin-top:0.25rem;">
+                You answered every single PET, IELTS, and FCE item accurately across both US and UK standards.
+              </p>
+            </div>
+          </div>
+        `;
+      } else {
+        studyPlanEl.classList.remove('all-mastered');
+        const cardsHtml = reviewFeedbackList.map(rf => `
+          <div class="review-topic-card">
+            <div style="flex:1;min-width:240px;">
+              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.45rem;">
+                <strong style="font-size:0.9rem;color:#0f172a;">${rf.title}</strong>
+                <span style="font-size:0.7rem;font-weight:800;background:#fee2e2;color:#b91c1c;padding:0.15rem 0.5rem;border-radius:999px;">
+                  Missed Items: ${rf.missedItems}
+                </span>
+              </div>
+              <p style="font-size:0.8rem;color:#334155;margin-top:0.3rem;line-height:1.45;">
+                <strong>What to review:</strong> ${rf.advice}
+              </p>
+            </div>
+            <button onclick="switchTab(${rf.targetTab})" class="btn btn-primary btn-sm no-print">
+              ${rf.targetLabel}
+            </button>
+          </div>
+        `).join('');
+
+        studyPlanEl.innerHTML = `
+          <div>
+            <span class="section-eyebrow eyebrow-amber" style="margin-bottom:0.2rem;">🎯 Personalized Study Feedback &bull; Qué Debes Repasar</span>
+            <h4 style="font-size:1.05rem;font-weight:800;color:#92400e;">
+              Recommended Review Plan (${reviewFeedbackList.length} ${reviewFeedbackList.length === 1 ? 'Topic' : 'Topics'} to Strengthen)
+            </h4>
+            <p style="font-size:0.8rem;color:#475569;margin-top:0.2rem;">
+              Focus on these specific grammar areas before retaking the exam to raise your score toward 50/50:
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.6rem;">
+            ${cardsHtml}
+          </div>
+        `;
+      }
+
+      state.lastExamReport = {
+        studentName,
+        studentGroup,
+        timestamp,
+        verificationCode,
+        totalPts,
+        pct,
+        petTotalPts,
+        ieltsPts,
+        fcePts,
+        cefrLabel,
+        reviewFeedbackList,
+        reviewItems
+      };
+
+      const previewEl = document.getElementById('export-report-preview');
+      if (previewEl) {
+        previewEl.textContent = buildFormattedReportText();
+      }
+
+      document.getElementById('diag-review-list').innerHTML = reviewItems.map(r => `
+        <div style="padding:0.75rem 0.9rem;border-radius:0.75rem;border:1px solid ${r.ok ? '#86efac' : '#fca5a5'};background:${r.ok ? '#f0fdf4' : '#fef2f2'};font-size:0.82rem;">
+          <div class="flex-between" style="font-weight:800;">
+            <span>${r.ok ? '✅' : '❌'} Item #${r.num} (${r.part}) &mdash; <span style="color:${r.ok ? '#15803d' : '#b91c1c'};">${r.earned} / ${r.pts} pts</span></span>
+            <span>
+              Your answer: <strong style="color:${r.ok ? '#15803d' : '#b91c1c'};">${r.userAns}</strong>
+              ${!r.ok ? ` &nbsp;|&nbsp; Correct: <strong style="color:#15803d;background:#dcfce7;padding:0.1rem 0.4rem;border-radius:0.35rem;">${r.correctAns}</strong>` : ''}
+            </span>
+          </div>
+          <p style="color:#334155;margin-top:0.35rem;">${r.exp}</p>
+        </div>
+      `).join('');
+
+      const panel = document.getElementById('exam-diagnostic-panel');
+      panel.classList.remove('hidden');
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function buildFormattedReportText() {
+      const r = state.lastExamReport;
+      if (!r) return '';
+
+      const cardsDone = state.unlockedCards.size;
+      const spotterDone = state.spotterSolved.size;
+      const guidedDone = state.guidedSolved.size;
+      const listenDone = Object.keys(state.listeningAnswers).length;
+      const peerDone = Object.values(state.peerGrid).filter(x => x.status !== 'pending').length;
+
+      const lines = [
+        '============================================================',
+        'PRESENT PERFECT MASTERY - OFFICIAL STUDENT RESULTS REPORT',
+        '============================================================',
+        `Student Name : ${r.studentName}`,
+        `Class/Group  : ${r.studentGroup}`,
+        `Date & Time  : ${r.timestamp}`,
+        `Verify Code  : ${r.verificationCode}`,
+        '------------------------------------------------------------',
+        '1. SELF-PACED MODULES PROGRESS (MODULES 1 - 3)',
+        `- Verb Cards Unlocked : ${cardsDone} / 15`,
+        `- Error Spotter Drill : ${spotterDone} / 5`,
+        `- Guided Gap Fill     : ${guidedDone} / 6`,
+        `- Listening (US & UK) : ${listenDone} / 8`,
+        `- Experience Grid     : ${peerDone} / 4`,
+        '------------------------------------------------------------',
+        '2. FINAL B1 EXAM QUIZ SCORE (SCALE: 0 TO 50 POINTS)',
+        `FINAL SCORE  : ${r.totalPts} / 50 pts (${r.pct}%)`,
+        `DIAGNOSTIC   : ${r.cefrLabel}`,
+        `- Cambridge PET (B1)  : ${r.petTotalPts} / 22 pts`,
+        `- IELTS Completion    : ${r.ieltsPts} / 16 pts`,
+        `- Cambridge FCE (B1+) : ${r.fcePts} / 12 pts`,
+        '------------------------------------------------------------',
+        '3. AREAS TO REVIEW (FEEDBACK DE REPASO)'
+      ];
+
+      if (r.reviewFeedbackList.length === 0) {
+        lines.push('* Excellent! 50/50 pts - No remedial review needed.');
+      } else {
+        r.reviewFeedbackList.forEach(rf => {
+          lines.push(`* ${rf.title} [Missed: ${rf.missedItems}]`);
+          lines.push(`  -> Review: ${rf.advice}`);
+        });
+      }
+
+      lines.push('------------------------------------------------------------');
+      lines.push('4. ITEM-BY-ITEM ANSWERS (ITEMS 1 - 16)');
+
+      r.reviewItems.forEach(item => {
+        const mark = item.ok ? '[OK]' : '[X] ';
+        const ptsTag = `(${item.earned}/${item.pts} pts)`;
+        const fix = item.ok ? '' : ` -> Expected: ${item.correctAns}`;
+        lines.push(`${mark} #${String(item.num).padStart(2, '0')} ${ptsTag} (${item.part}): ${item.userAns}${fix}`);
+      });
+
+      lines.push('============================================================');
+      return lines.join('\n');
+    }
+
+    function copyExamReport() {
+      const text = buildFormattedReportText();
+      if (!text) return;
+
+      const tempArea = document.createElement('textarea');
+      tempArea.value = text;
+      tempArea.style.position = 'fixed';
+      tempArea.style.left = '-9999px';
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      try {
+        document.execCommand('copy');
+        showToast('📋', 'Full report copied! Paste it in Google Classroom.');
+      } catch (e) {
+        showToast('⚠️', 'Could not auto-copy. Please use the Download .TXT button.');
+      }
+      document.body.removeChild(tempArea);
+    }
+
+    function copyShortClassroomSummary() {
+      const r = state.lastExamReport;
+      if (!r) return;
+
+      const weakAreas = r.reviewFeedbackList.length === 0
+        ? 'None (All 5 grammar areas mastered!)'
+        : r.reviewFeedbackList.map(rf => `${rf.title} [${rf.missedItems}]`).join(' | ');
+
+      const shortSummary = [
+        `🎓 PRESENT PERFECT B1 QUIZ — GOOGLE CLASSROOM REPORT`,
+        `Student: ${r.studentName} (${r.studentGroup}) | Code: ${r.verificationCode}`,
+        `FINAL SCORE: ${r.totalPts} / 50 pts (${r.pct}%) — ${r.cefrLabel}`,
+        `Breakdown: PET ${r.petTotalPts}/22 | IELTS ${r.ieltsPts}/16 | FCE ${r.fcePts}/12`,
+        `Areas to Review: ${weakAreas}`
+      ].join('\n');
+
+      const tempArea = document.createElement('textarea');
+      tempArea.value = shortSummary;
+      tempArea.style.position = 'fixed';
+      tempArea.style.left = '-9999px';
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      try {
+        document.execCommand('copy');
+        showToast('🎓', 'Classroom summary copied! Paste it in Private Comments.');
+      } catch (e) {
+        showToast('⚠️', 'Could not auto-copy. Please use Download .TXT.');
+      }
+      document.body.removeChild(tempArea);
+    }
+
+    function downloadExamReportTxt() {
+      const text = buildFormattedReportText();
+      if (!text || !state.lastExamReport) return;
+
+      const safeName = state.lastExamReport.studentName.replace(/[^a-z0-9]/gi, '_');
+      const filename = `Present_Perfect_Results_${safeName}.txt`;
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      showToast('💾', `Downloaded ${filename}`);
+    }
+
+    function printExamReportPdf() {
+      window.print();
+    }
+
+    function resetB1Exam() {
+      state.pet5Answers = {};
+      state.examGraded = false;
+      state.lastExamReport = null;
+
+      // Reset Part 1 (PET Reading Part 5) slots & buttons
+      const defaultSlots = {
+        1: '(1) ____________',
+        2: '(2) ____________',
+        3: '(3) ________',
+        4: '(4) ______',
+        5: '(5) _____'
+      };
+      [1, 2, 3, 4, 5].forEach(num => {
+        const slot = document.getElementById(`pet5-slot-${num}`);
+        if (slot) slot.textContent = defaultSlots[num];
+      });
+      renderExamPet5();
+
+      // Clear Part 2 (PET Reading Part 6) inputs
+      [6, 7, 8, 9].forEach(num => {
+        const inp = document.getElementById(`pet6-input-${num}`);
+        if (inp) inp.value = '';
+      });
+
+      // Clear Part 3 (IELTS Completion) inputs
+      EXAM_IELTS_DATA.forEach(item => {
+        const inp = document.getElementById(`ielts-input-${item.num}`);
+        if (inp) inp.value = '';
+      });
+
+      // Clear Part 4 (FCE Key Word Transformations) inputs
+      EXAM_FCE_DATA.forEach(item => {
+        const inp = document.getElementById(`fce-input-${item.num}`);
+        if (inp) inp.value = '';
+      });
+
+      // Hide diagnostic panel & reset tab completion badge
+      const panel = document.getElementById('exam-diagnostic-panel');
+      if (panel) panel.classList.add('hidden');
+      const badge = document.getElementById('tab-badge-4');
+      if (badge) badge.classList.add('hidden');
+
+      updateGlobalProgress();
+      showToast('🔄', 'Exam reset! Ready for a fresh attempt.');
+    }
+  </script>
+</body>
+</html>
